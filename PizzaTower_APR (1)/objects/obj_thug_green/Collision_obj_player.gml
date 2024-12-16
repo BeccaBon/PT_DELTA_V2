@@ -1,0 +1,86 @@
+var player = other.id;
+var baddie = id;
+
+if (state == states.punch)
+{
+	scr_hurtplayer(player);
+}
+else
+{
+	with (other)
+	{
+		if (instakillmove == true && baddie.state != states.grabbed && baddie.thrown == false && !baddie.invincible)
+		{
+			if (state == states.mach3 && sprite_index != spr_mach3hit && (character == "P" || character == "V"))
+			{
+				if (fightball == false)
+				{
+					sprite_index = spr_mach3hit;
+				}
+
+				image_index = 0;
+			}
+
+			if (state == states.mach2 && grounded)
+			{
+				machpunchAnim = true;
+				image_index = 0;
+			}
+
+			if (state != states.hurt)
+			{
+				baddie.grabbedby = 1;
+			}
+			else
+			{
+				baddie.grabbedby = 2;
+			}
+
+			scr_soundeffect(sfx_punch);
+
+			if (!baddie.important)
+			{
+				global.hit += 1;
+				global.combotime = 60;
+			}
+
+			if (state == states.mach3)
+			{
+				instance_destroy(baddie);
+			}
+			else
+			{
+				var _hsp_multi = 2;
+				baddie.hsp = sign(baddie.x - x) * _hsp_multi;
+
+				if (baddie.hsp == 0)
+				{
+					baddie.hsp = -baddie.image_xscale * _hsp_multi;
+				}
+
+				baddie.vsp = -8;
+				baddie.stunned = baddie.inv_max;
+				baddie.state = states.stun;
+				baddie.inv_stun = 1;
+				baddie.inv_timer = baddie.inv_max;
+				baddie.hp--;
+
+				if (baddie.hp <= 0)
+				{
+					instance_destroy(baddie);
+				}
+			}
+
+			if (!grounded && state != states.freefall && key_jump2)
+			{
+				if (state == states.mach2 || (state == states.mach3 && fightball == false))
+				{
+					sprite_index = spr_mach2jump;
+				}
+
+				suplexmove = false;
+				vsp = -11;
+			}
+		}
+	}
+}

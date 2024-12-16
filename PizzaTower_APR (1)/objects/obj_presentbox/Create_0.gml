@@ -1,0 +1,14 @@
+getout = 400;
+outtime = 200;
+getoutspd = 200;
+outtimespd = 200;
+randomize();
+character = 0;
+upspr = 1867;
+spr = 1868;
+downspr = 1869;
+deadspr = 946;
+box = true;
+image_speed = 0.35;
+depth = 10;
+global.boxhp = 20;

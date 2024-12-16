@@ -1,0 +1,1 @@
+function scr_losepoints() {}

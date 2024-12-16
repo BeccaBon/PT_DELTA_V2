@@ -1,0 +1,15 @@
+depth = 0;
+hsp = 0;
+vsp = 0;
+movespeed = 4;
+grav = 0.5;
+jumpspeed = 5;
+grounded = false;
+state = states.walk;
+deadspr = 374;
+walkspr = spr_clownmato_fall;
+stunspr = 373;
+stunbuffer = 0;
+stuntouchbuffer = 0;
+stunmax = 50;
+image_speed = 0.35;
