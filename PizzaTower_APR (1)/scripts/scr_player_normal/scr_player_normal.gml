@@ -373,7 +373,7 @@ function state_player_normal()
 			}
 			 if global.attackstyle = 1
 			{
-				sprite_index = spr_player_attackdash
+				sprite_index = spr_attackdash
 			}
 			with (instance_create(x, y, obj_superdashcloud))
 			{

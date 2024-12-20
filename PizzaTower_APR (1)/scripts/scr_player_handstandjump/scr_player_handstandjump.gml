@@ -23,7 +23,7 @@ function scr_player_handstandjump()
 	}
 	else if global.attackstyle = 1
 	{
-	attackdash = spr_player_attackdash
+	attackdash = spr_attackdash
 	}
 	else
 	{
@@ -34,7 +34,7 @@ function scr_player_handstandjump()
 
 	if global.attackstyle = 1
 	{
-	airattackdash = spr_player_airattack
+	airattackdash = spr_airattack
 	}
 	else
 	{
@@ -45,7 +45,7 @@ function scr_player_handstandjump()
 
 	if global.attackstyle = 1
 	{
-	airattackdashstart = spr_player_airattackstart
+	airattackdashstart = spr_airattackstart
 	}
 	else
 	{

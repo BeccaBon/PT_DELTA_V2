@@ -377,7 +377,7 @@ function state_player_jump()
 		}
 			 if global.attackstyle = 1
 			{
-				sprite_index = spr_player_airattackstart
+				sprite_index = spr_airattackstart
 			}
 		suplexmove = true;
 		suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false);

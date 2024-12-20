@@ -19,6 +19,11 @@ function scr_heatup()
 		alarm[0] = 200;
 		showtext = 1;
 	}
+		with (obj_baddie)
+	{
+		instance_create(x, y, obj_genericpoofeffect)
+
+	}
 
 	obj_stylebar.toggle = 1;
 	obj_stylebar.alarm[0] = 5;

@@ -1,6 +1,7 @@
 draw_set_font(global.bigfont);
 draw_set_halign(fa_center);
 draw_set_color(c_white);
+shader_set(global.Pal_Shader);
 
 if (global.use_temperature)
 {
@@ -31,7 +32,14 @@ if (room != strongcold_endscreen)
 {
 	draw_sprite_ext(sprite_index, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
 }
-
+	if (!obj_player1.ispeppino)
+	{
+		pal_swap_set(spr_tv_palette, 1, false);
+		var spr = spr_tv_empty;
+		if sprite_index == spr_tv_open
+			spr = sprite_index;
+		draw_sprite_ext(sprite_index, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
+	}
 if (global.combo != 0 && sprite_index != spr_tv_open && sprite_index != spr_tv_off)
 {
 	draw_sprite_ext(spr_tv_combo, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);

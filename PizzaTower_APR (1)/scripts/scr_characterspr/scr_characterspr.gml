@@ -133,6 +133,9 @@ function scr_characterspr()
 		spr_facehurt = spr_player_facehurt;
 		spr_walljumpend = spr_player_walljumpend;
 		spr_suplexdash = spr_player_suplexdash;
+		spr_attackdash = spr_player_attackdash
+		spr_airattackstart = spr_player_airattackstart
+		spr_airattack = spr_player_airattack
 		spr_suplexdashjumpstart = spr_player_suplexgrabjumpstart;
 		spr_suplexdashjump = spr_player_suplexgrabjump;
 		spr_shotgunsuplexdash = spr_shotgun_suplexdash;
@@ -365,6 +368,9 @@ function scr_characterspr()
 		spr_suplexdash = spr_playerN_suplexgrab;
 		spr_suplexdashjumpstart = spr_playerN_suplexgrabjumpstart;
 		spr_suplexdashjump = spr_playerN_suplexgrabjump;
+		spr_attackdash = spr_playerN_spin
+		spr_airattackstart = spr_playerN_spin
+		spr_airattack = spr_playerN_spin
 		spr_shotgunsuplexdash = spr_playerN_minigundash;
 		spr_rollgetup = spr_playerN_rollgetup;
 		spr_superjumppreplight = spr_playerN_Sjumpprep;
