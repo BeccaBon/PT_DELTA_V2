@@ -385,38 +385,23 @@ function state_player_normal()
 		}
 		else if (key_up)
 		{
-			if (ispeppino)
+			if (character != "V")
 			{
 				state = states.punch;
 				image_index = 0;
 				sprite_index = spr_player_breakdanceuppercut;
-				vsp = -14;
+				if ispeppino
+					vsp = -14;
+				else
+					vsp = -20;
 				movespeed = 2;
 				particle_set_scale(particle.highjumpcloud2, xscale, 1);
 				create_particle(x, y, particle.highjumpcloud2, 0);
 			}
-			else if (character != "V")
-			{
-				state = states.pistol;
-				image_index = 0;
-				sprite_index = spr_playerN_noisebombthrow;
-
-				with (instance_create(x, y, obj_playerbomb))
-				{
-					depth = 2;
-					movespeed = round((other.movespeed / 4) * 3);
-
-					if (movespeed < 2)
-					{
-						movespeed = 2;
-					}
-
-					vsp = -12;
-					image_xscale = other.xscale;
 				}
 			}
-		}
-	}
+
+
 
 	if (shotgunAnim)
 	{

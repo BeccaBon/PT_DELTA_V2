@@ -35,6 +35,7 @@ enum states
 	gottreasure = 32,
 	knightpep = 33,
 	knightpepattack = 34,
+	knightpepbump,
 	meteorpep = 35,
 	bombpep = 36,
 	grabbing = 37,

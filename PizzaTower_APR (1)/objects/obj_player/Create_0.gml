@@ -3,7 +3,9 @@ if (instance_number(object_index) > 1)
 	instance_destroy();
 	exit;
 }
-
+knightmomentum = 0;
+knightmiddairstop = 0;
+knightmove = -1;
 ispeppino = true;
 grav = 0.5;
 hsp = 0;

@@ -43,6 +43,16 @@ if (
 		scr_sound(mu_pizzatime);
 		pausedmusic = mu_pizzatime;
 	}
+	else if (obj_player1.ispeppino == false)
+	{
+		scr_sound(mu_noiseescape);
+		pausedmusic = mu_noiseescape;
+	}
+	else if (global.gerome == 1)
+	{
+		scr_sound(mu_chase);
+		pausedmusic = mu_chase;
+	}
 	else
 	{
 		scr_sound(mu_noiseescape);

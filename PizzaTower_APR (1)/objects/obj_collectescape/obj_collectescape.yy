@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_collectescape",
   "spriteId": {
-    "name": "spr_bananacollect",
-    "path": "sprites/spr_bananacollect/spr_bananacollect.yy",
+    "name": "spr_clockcollectible2",
+    "path": "sprites/spr_clockcollectible2/spr_clockcollectible2.yy",
   },
   "solid": false,
   "visible": true,

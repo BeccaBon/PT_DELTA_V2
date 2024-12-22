@@ -91,7 +91,8 @@ switch (state)
 	case states.knightpepslopes:
 		scr_player_knightpepslopes();
 		break;
-
+	
+		
 	case states.portal:
 		scr_player_portal();
 		break;
@@ -116,22 +117,15 @@ switch (state)
 		scr_player_gottreasure();
 		break;
 
-	case states.knightpep:
-		scr_player_knightpep();
-		break;
-
-	case states.knightpepattack:
-		scr_player_knightpepattack();
-		break;
-
-	case states.meteorpep:
-		scr_player_meteorpep();
-		break;
-
-	case states.bombpep:
-		scr_player_bombpep();
-		break;
-
+    case states.knightpep:
+        scr_player_knightpep()
+        break
+    case states.knightpepattack:
+        scr_player_knightpepattack()
+        break
+    case states.knightpepbump:
+        scr_player_knightpepbump()
+        break
 	case states.grabbing:
 		scr_player_grabbing();
 		break;

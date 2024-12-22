@@ -7,7 +7,7 @@ with (other)
 {
 	if ((obj_player1.character == "P" && obj_player1.spotlight == true) || (obj_player2.character == "P" && obj_player1.spotlight == false))
 	{
-		sprite_index = choose(spr_eggcollect, spr_fishcollect, spr_bananacollect, spr_baconcollect, spr_shrimpcollect);
+		sprite_index = choose(spr_clockcollectible1, spr_clockcollectible2);
 	}
 
 	if ((obj_player1.character == "N" && obj_player1.spotlight == true) || (obj_player2.character == "N" && obj_player1.spotlight == false))

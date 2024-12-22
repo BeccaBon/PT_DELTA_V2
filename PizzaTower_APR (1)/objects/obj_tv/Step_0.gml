@@ -354,3 +354,16 @@ if change_pos
     hud_posY = Approach(hud_posY, -300, spd)
 else
     hud_posY = Approach(hud_posY, 0, spd)
+	
+	if (showtext == 1)
+{
+    xi = 500 + (random_range(1, -1))
+    if (yi > 500)
+        yi -= 5
+}
+if (showtext == 0)
+{
+    xi = 500 + (random_range(1, -1))
+    if (yi < 600)
+        yi += 1
+}
