@@ -163,7 +163,6 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 
 		case "entrancesecret":
 		case "chateausecret":
-		case "strongcoldsecret":
 		case "medievalsecret":
 			global.mu = mu_medievalsecret;
 			break;
@@ -173,6 +172,7 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 			break;
 
 		case "dungeonsecret":
+		case "strongcoldsecret":
 			global.mu = mu_dungeonsecret;
 			break;
 
@@ -192,9 +192,55 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 			global.mu = mu_graveyardsecret;
 			break;
 
+		case "forestsecret":
+			global.mu = mu_forestsecret;
+			break;
+
 		case "farmsecret":
 			global.mu = mu_farmsecret;
 			break;
+        case "freezer":
+            for (i = 0; i < 20; i++)
+            {
+                if (roomname == ("freezer_" + string(i)) && i <= 13)
+                    global.mu = mu_freezer
+                else if (roomname == ("freezer_" + string(i)) && i > 13)
+                    global.mu = mu_freezerb
+            }
+            break
+        case "sewer":
+            for (i = 0; i < 20; i++)
+            {
+                if (roomname == ("sewer_" + string(i)) && i <= 4)
+                    global.mu = mu_sewer
+                else if (roomname == ("sewer_" + string(i)) && i > 4)
+                    global.mu = mu_sewerb
+            }
+            break
+        case "factory":
+            global.mu = mu_factory
+            break
+        case "minigolf":
+            global.mu = mu_minigolf
+            break
+        case "space":
+            global.mu = mu_space
+            break
+        case "war":
+            global.mu = mu_war
+            break
+        case "mansion":
+            global.mu = mu_mansion
+            break
+        case "kungfu":
+            global.mu = mu_kungfu
+            break
+        case "city":
+            global.mu = mu_city
+            break
+        case "kidsparty":
+            global.mu = mu_kidsparty
+            break
 	}
 
 	if (global.mu != noone && !audio_is_playing(global.mu))

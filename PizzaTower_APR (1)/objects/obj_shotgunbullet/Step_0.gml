@@ -21,7 +21,7 @@ if (shotgun == 1)
 
 with (instance_place(x + spd, y, obj_destructibles))
 {
-	if (object_index != obj_onwaybigblock && (object_index != obj_hungrypillar || other.sprite_index != spr_peppinobullet))
+	if (object_index != obj_onewaybigblock && (object_index != obj_hungrypillar || other.sprite_index != spr_peppinobullet))
 	{
 		instance_destroy();
 	}
