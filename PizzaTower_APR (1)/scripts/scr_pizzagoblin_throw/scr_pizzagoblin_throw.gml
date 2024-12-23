@@ -108,15 +108,15 @@ function scr_pizzagoblin_throw()
 
 		switch (object_index)
 		{
-			case obj_pizzagoblin:
-				with (instance_create(x, y, obj_pizzagoblinbomb))
-				{
-					hsp = other.image_xscale * 10;
-					vsp = -8;
-				}
-
-				break;
-
+            case obj_pizzagoblin:
+                with (instance_create(x, y, obj_pizzagoblinbomb))
+                {
+                    defused = 1
+                    movespeed = 5
+                    image_xscale = other.image_xscale
+                    vsp = -8
+                }
+                break
 			case obj_canongoblin:
 				with (instance_create(x, y, obj_canongoblinbomb))
 				{

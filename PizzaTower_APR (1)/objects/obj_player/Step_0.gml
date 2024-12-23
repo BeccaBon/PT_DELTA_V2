@@ -120,23 +120,30 @@ switch (state)
     case states.knightpep:
         scr_player_knightpep()
         break
+		
     case states.knightpepattack:
         scr_player_knightpepattack()
         break
+		
     case states.knightpepbump:
         scr_player_knightpepbump()
         break
-	case states.grabbing:
-		scr_player_grabbing();
-		break;
-
-	case states.chainsawpogo:
-		scr_player_chainsawpogo();
-		break;
-
-	case states.shotgunjump:
-		scr_player_shotgunjump();
-		break;
+	    case states.bombpep:
+        scr_player_bombpep()
+        break
+		
+    case states.bombpepup:
+        scr_player_bombpepup()
+        break
+		
+    case states.bombpepside:
+        scr_player_bombpepside()
+        break
+		
+    case states.bombgrab:
+        scr_player_bombgrab()
+        break
+		
 
 	case states.stunned:
 		scr_player_stunned();

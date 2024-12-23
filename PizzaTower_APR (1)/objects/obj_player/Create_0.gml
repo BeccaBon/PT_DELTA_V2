@@ -3,6 +3,7 @@ if (instance_number(object_index) > 1)
 	instance_destroy();
 	exit;
 }
+bombgrabID = -4
 knightmomentum = 0;
 knightmiddairstop = 0;
 knightmove = -1;
