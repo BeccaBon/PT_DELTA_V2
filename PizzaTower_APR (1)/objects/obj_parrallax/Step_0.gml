@@ -44,3 +44,7 @@ layer_x("Backgrounds_scroll", (_cam_x * 0.25) + bg_scrollx);
 layer_y("Backgrounds_scroll", (_cam_y * 0.25) + bg_scrolly);
 bg_scrollx += layer_get_hspeed("Backgrounds_scroll");
 bg_scrolly += layer_get_vspeed("Backgrounds_scroll");
+layer_x("Foreground_1", (_cam_x * 0.35))
+layer_y("Foreground_1", (_cam_y * 0.35))
+layer_x("Foreground_Ground1", (_cam_x * 0.35))
+layer_y("Foreground_Ground1", (room_height - sprite_get_height(layer_background_get_sprite(layer_background_get_id(layer_get_id("Foreground_Ground1"))))))

@@ -79,7 +79,7 @@ function scr_player_knightpepslopes() //gml_Script_scr_player_knightpepslopes
             s1 = 0.05
             s2 = 0.2
         }
-        scr_player_addslopemomentum(s1, s2)
+        movespeed = 15
         if (movespeed <= 0 && grounded)
         {
             movespeed = 0
