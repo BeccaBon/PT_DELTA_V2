@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_graveyard",
-  "duration": 135.539,
+  "duration": 135.53923,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "levels",
+    "path": "folders/Sounds/music/levels.yy",
   },
 }

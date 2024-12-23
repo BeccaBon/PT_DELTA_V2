@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_noiseescape",
-  "duration": 159.737,
+  "soundFile": "mu_noiseescape.mp3",
+  "duration": 163.968,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "panic",
+    "path": "folders/Sounds/music/panic.yy",
   },
 }

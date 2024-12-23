@@ -14,10 +14,10 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_medievalremix",
-  "duration": 176.002,
+  "soundFile": "mu_medievalremix.mp3",
+  "duration": 176.03912,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "levels",
+    "path": "folders/Sounds/music/levels.yy",
   },
 }

@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_chase",
-  "duration": 84.218,
+  "duration": 84.21877,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "panic",
+    "path": "folders/Sounds/music/panic.yy",
   },
 }

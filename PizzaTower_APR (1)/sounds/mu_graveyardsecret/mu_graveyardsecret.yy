@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_graveyardsecret",
-  "duration": 71.492,
+  "duration": 71.49279,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "secret",
+    "path": "folders/Sounds/music/secret.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "mu_ranka",
   "duration": 15.575,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "misc",
+    "path": "folders/Sounds/music/misc.yy",
   },
 }

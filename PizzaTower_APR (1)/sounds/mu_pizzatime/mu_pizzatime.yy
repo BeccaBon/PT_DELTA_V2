@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_pizzatime",
-  "duration": 231.632,
+  "duration": 231.63292,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "panic",
+    "path": "folders/Sounds/music/panic.yy",
   },
 }

@@ -17,7 +17,7 @@
   "soundFile": "mu_timesup",
   "duration": 4.871,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "misc",
+    "path": "folders/Sounds/music/misc.yy",
   },
 }

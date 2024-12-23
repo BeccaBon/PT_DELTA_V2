@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "mu_medievalsecret",
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": true,
   "bitRate": 128,
@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_medievalsecret",
-  "duration": 71.507,
+  "duration": 71.5073,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "secret",
+    "path": "folders/Sounds/music/secret.yy",
   },
 }

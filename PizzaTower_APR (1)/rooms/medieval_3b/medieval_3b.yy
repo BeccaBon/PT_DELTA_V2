@@ -112,7 +112,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_95309606","properties":[],"isDnd":false,"objectId":{"name":"obj_forknight","path":"objects/obj_forknight/obj_forknight.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":390.0,"y":850.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AE3047E","properties":[],"isDnd":false,"objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":-3.0,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1856.0,"y":1280.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_AE9682E6","properties":[],"isDnd":false,"objectId":{"name":"obj_metalblock","path":"objects/obj_metalblock/obj_metalblock.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1184.0,"y":896.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_235AF05E","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":5.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1440.0,"y":928.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","tilesetId":{"name":"tile_medievaldeco","path":"tilesets/tile_medievaldeco/tile_medievaldeco.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":100,"SerialiseHeight":50,"TileCompressedData":[
 -370,0,2,5,6,-98,0,2,25,26,-98,0,2,45,46,-70,0,8,85,86,87,88,89,90,91,92,-34,0,3,14,15,16,-55,0,8,105,106,107,108,109,110,111,112,-34,0,3,34,35,36,-55,0,8,125,126,127,128,129,130,131,132,-34,0,3,54,55,56,-55,0,8,145,146,147,148,149,150,151,152,-34,0,3,74,75,76,-55,0,8,165,166,167,168,169,170,171,172,-34,0,3,94,95,96,
@@ -245,7 +244,6 @@
     {"name":"inst_95309606","path":"rooms/medieval_3b/medieval_3b.yy",},
     {"name":"inst_2AE3047E","path":"rooms/medieval_3b/medieval_3b.yy",},
     {"name":"inst_AE9682E6","path":"rooms/medieval_3b/medieval_3b.yy",},
-    {"name":"inst_235AF05E","path":"rooms/medieval_3b/medieval_3b.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

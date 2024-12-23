@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_snickchallengeend",
-  "duration": 139.248,
+  "duration": 139.24861,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "panic",
+    "path": "folders/Sounds/music/panic.yy",
   },
 }

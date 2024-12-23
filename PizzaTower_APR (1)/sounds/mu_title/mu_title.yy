@@ -17,7 +17,7 @@
   "soundFile": "mu_title",
   "duration": 134.4,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "misc",
+    "path": "folders/Sounds/music/misc.yy",
   },
 }

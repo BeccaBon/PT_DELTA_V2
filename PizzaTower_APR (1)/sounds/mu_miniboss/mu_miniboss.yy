@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_miniboss",
-  "duration": 140.617,
+  "duration": 140.61714,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "boss",
+    "path": "folders/Sounds/music/boss.yy",
   },
 }

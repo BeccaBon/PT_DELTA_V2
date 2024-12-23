@@ -17,7 +17,7 @@
   "soundFile": "mu_dungeonsecret",
   "duration": 71.489,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "secret",
+    "path": "folders/Sounds/music/secret.yy",
   },
 }

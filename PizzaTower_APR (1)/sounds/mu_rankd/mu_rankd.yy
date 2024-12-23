@@ -17,7 +17,7 @@
   "soundFile": "mu_rankd",
   "duration": 14.836,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "misc",
+    "path": "folders/Sounds/music/misc.yy",
   },
 }

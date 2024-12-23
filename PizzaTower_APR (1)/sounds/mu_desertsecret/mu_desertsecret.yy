@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_desertsecret",
-  "duration": 71.489,
+  "duration": 71.48988,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "secret",
+    "path": "folders/Sounds/music/secret.yy",
   },
 }
