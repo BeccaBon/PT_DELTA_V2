@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_shotgungot",
-  "duration": 1.885,
+  "duration": 1.88517,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_shotgunblast",
-  "duration": 1.458,
+  "duration": 1.458503,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

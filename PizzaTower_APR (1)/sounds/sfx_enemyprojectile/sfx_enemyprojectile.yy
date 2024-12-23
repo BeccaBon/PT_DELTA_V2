@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_enemyprojectile",
-  "duration": 0.144,
+  "duration": 0.144059,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_yipee",
-  "duration": 1.16,
+  "duration": 1.160998,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
