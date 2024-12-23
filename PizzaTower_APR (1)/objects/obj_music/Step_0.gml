@@ -43,23 +43,17 @@ if (
 		scr_sound(mu_pizzatime);
 		pausedmusic = mu_pizzatime;
 	}
-	else if (obj_player1.ispeppino == false)
-	{
-		scr_sound(mu_noiseescape);
-		pausedmusic = mu_noiseescape;
-	}
-	else if (global.gerome == 1)
-	{
-		scr_sound(mu_chase);
-		pausedmusic = mu_chase;
-	}
-	else
+	else if (character == "N" || !ispeppino)
 	{
 		scr_sound(mu_noiseescape);
 		pausedmusic = mu_noiseescape;
 	}
 }
-
+if (global.gerome == true)
+{
+	scr_sound(mu_chase);
+	pausedmusic = mu_chase;
+}
 if (arena == 1 && !audio_is_playing(mu_miniboss) && obj_pause.pause == 0)
 {
 	audio_stop_all();
