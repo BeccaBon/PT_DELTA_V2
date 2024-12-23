@@ -1,2 +1,2 @@
-pal_swap_init_system(shd_pal_swapper);
-global.roommessage = "VERY VERY OLD CHEESE";
+pal_swap_init_system(1)
+global.roommessage = "VERY VERY OLD CHEESE"

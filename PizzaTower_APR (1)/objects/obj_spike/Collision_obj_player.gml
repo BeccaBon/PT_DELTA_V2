@@ -6,7 +6,7 @@ if (other.state != states.barrel)
 }
 else
 {
-    with (other)
+    if (other.state == states.knightpep or other.state == states.knightpepslopes or other.state == states.knightpepbump)
     {
         state = states.bump
         sprite_index = spr_bump

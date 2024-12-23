@@ -1,2 +1,3 @@
-pal_swap_init_system(shd_pal_swapper);
-global.roommessage = "RUINS OF THE PIZZA TOWER";
+pal_swap_init_system(1)
+global.roommessage = "RUINS OF THE PIZZA TOWER"
+

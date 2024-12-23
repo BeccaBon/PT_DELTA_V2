@@ -35,8 +35,10 @@ function scr_player_knightpepslopes() //gml_Script_scr_player_knightpepslopes
         jumpstop = 0
     if ((!scr_slope()) && ((sprite_index != spr_knightpepjump && sprite_index != spr_knightpepfall && sprite_index != spr_knightpep_doublejump) || grounded))
         sprite_index = spr_knightpepcharge
+		image_speed = 0.35
     if scr_slope()
         sprite_index = spr_knightpepdownslope
+		image_speed = 0.35
     if (input_buffer_jump < 8)
     {
         if (grounded || (!doublejump))

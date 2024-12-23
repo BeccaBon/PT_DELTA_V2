@@ -120,15 +120,8 @@ switch (state)
     case states.knightpep:
         scr_player_knightpep()
         break
-		
-    case states.knightpepattack:
-        scr_player_knightpepattack()
-        break
-		
-    case states.knightpepbump:
-        scr_player_knightpepbump()
-        break
-	    case states.bombpep:
+	
+    case states.bombpep:
         scr_player_bombpep()
         break
 		
@@ -144,6 +137,13 @@ switch (state)
         scr_player_bombgrab()
         break
 		
+    case states.knightpepattack:
+        scr_player_knightpepattack()
+        break
+		
+    case states.knightpepbump:
+        scr_player_knightpepbump()
+        break
 
 	case states.stunned:
 		scr_player_stunned();
@@ -441,7 +441,25 @@ switch (state)
 		scr_player_trickjump();
 		break;
 }
-
+if (!scr_slope())
+    angle = 0
+else if (!(place_meeting(x, (y + 1), obj_solid)))
+{
+    with (instance_place(x, (y + 1), obj_slope))
+    {
+        if (abs(image_yscale) < abs(image_xscale))
+        {
+            if (sign(image_xscale) == 1)
+                other.angle = 15
+            else
+                other.angle = -15
+        }
+        else if (sign(image_xscale) == 1)
+            other.angle = 30
+        else
+            other.angle = -30
+    }
+}
 if (state != states.grab)
 {
 	grabbingenemy = false;
