@@ -3,7 +3,7 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 	if (instance_exists(obj_pepperman))
 	{
 		audio_stop_all();
-		scr_sound(mu_chase);
+		scr_sound(mu_snickchallengeend);
 	}
 
 	roomname = room_get_name(room);
@@ -162,6 +162,12 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 			break;
 
 		case "entrancesecret":
+		case "kungfusecret":
+		case "mansionsecret":
+		case "citysecret":
+			global.mu = mu_secret;
+			break;
+			
 		case "chateausecret":
 		case "medievalsecret":
 			global.mu = mu_medievalsecret;
@@ -199,6 +205,27 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 		case "farmsecret":
 			global.mu = mu_farmsecret;
 			break;
+			
+		case "sewersecret":
+			global.mu = mu_sewersecret;
+			break;
+			
+		case "minigolfsecret":
+			global.mu = mu_minigolfsecret;
+			break;
+			
+		case "kidspartysecret":
+			global.mu = mu_kidspartysecret;
+			break;
+			
+		case "factorysecret":
+			global.mu = mu_factorysecret;
+			break;
+			
+		case "beachsecret":
+			global.mu = mu_beachsecret;
+			break;
+			
         case "freezer":
             for (i = 0; i < 20; i++)
             {

@@ -16,8 +16,40 @@ with (obj_player1)
 		case states.knightpepslopes:
 			audio_sound_pitch(global.mu, 1.2);
 			break;
+			
+		case states.cheeseball:
+			audio_sound_pitch(global.mu, 1.2);
+			break;
 
+		case states.cheesepep:
+			audio_sound_pitch(global.mu, 0.9);
+			break;
+			
+		case states.cheesepepstick:
+			audio_sound_pitch(global.mu, 0.9);
+			break;
+			
 		case states.tumble:
+			audio_sound_pitch(global.mu, 1.2);
+			break;
+
+		case states.rocket:
+			audio_sound_pitch(global.mu, 1.2);
+			break;
+
+		case states.barrel:
+			audio_sound_pitch(global.mu, 1.2);
+			break;
+
+		case states.rideweenie:
+			audio_sound_pitch(global.mu, 1.2);
+			break;
+
+		case states.firemouth:
+			audio_sound_pitch(global.mu, 1.2);
+			break;
+
+		case states.skateboard:
 			audio_sound_pitch(global.mu, 1.2);
 			break;
 
@@ -30,6 +62,9 @@ if (
 	!audio_is_playing(mu_pizzatime)
 	&& !audio_is_playing(mu_chase)
 	&& !audio_is_playing(mu_noiseescape)
+	&& !audio_is_playing(mu_noisechase)
+	&& !audio_is_playing(mu_finalescape)
+	&& !audio_is_playing(mu_noisefinalescape)
 	&& string_letters(roomname) != "dragonlair"
 	&& global.panic == true
 	&& obj_pause.pause == 0
@@ -37,23 +72,44 @@ if (
 )
 {
 	audio_stop_all();
-
-	if (obj_player1.character == "P")
-	{
-		scr_sound(mu_pizzatime);
-		pausedmusic = mu_pizzatime;
-	}
-	else if (character == "N" || !ispeppino)
+    if (global.gerome == true)
+    {
+		if (obj_player1.character == "N" || obj_player1.ispeppino == 0)
+		{
+			scr_sound(mu_noisechase)
+			pausedmusic = mu_noisechase
+		}
+		else
+		{
+			scr_sound(mu_chase)
+			pausedmusic = mu_chase
+		}
+    }
+	else if (string_letters(room_get_name(room)) == "exit")
+    {
+		if (obj_player1.character == "N" || obj_player1.ispeppino == 0)
+		{
+			scr_sound(mu_noisefinalescape)
+			pausedmusic = mu_noisefinalescape
+		}
+		else
+		{
+			scr_sound(mu_finalescape)
+			pausedmusic = mu_finalescape
+		}
+    }
+	else if (obj_player1.character == "N" || obj_player1.ispeppino == 0)
 	{
 		scr_sound(mu_noiseescape);
 		pausedmusic = mu_noiseescape;
 	}
+	else
+	{
+		scr_sound(mu_pizzatime);
+		pausedmusic = mu_pizzatime;
+	}
 }
-if (global.gerome == true)
-{
-	scr_sound(mu_chase);
-	pausedmusic = mu_chase;
-}
+
 if (arena == 1 && !audio_is_playing(mu_miniboss) && obj_pause.pause == 0)
 {
 	audio_stop_all();
@@ -61,18 +117,12 @@ if (arena == 1 && !audio_is_playing(mu_miniboss) && obj_pause.pause == 0)
 	pausedmusic = mu_miniboss;
 }
 
-if (instance_exists(obj_hungrypillar) && !audio_is_playing(mu_dungeondepth) && obj_pause.pause == 0 && !audio_is_playing(mu_chase))
+if (instance_exists(obj_hungrypillar) && !audio_is_playing(mu_dungeondepth) && obj_pause.pause == 0)
 {
 	audio_stop_all();
 	scr_sound(mu_dungeondepth);
 	pausedmusic = mu_dungeondepth;
 }
-
-if (global.combo < 50 && audio_is_playing(mu_chase))
-{
-	audio_stop_sound(mu_chase);
-}
-
 if (global.miniboss == false && arena == 0 && audio_is_playing(mu_miniboss))
 {
 	audio_stop_sound(mu_miniboss);

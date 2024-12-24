@@ -52,7 +52,9 @@ function scr_savescore(argument0)
 	}
 
 	audio_stop_sound(mu_pizzatime);
+	audio_stop_sound(mu_chase);
 	audio_stop_sound(mu_noiseescape);
+	audio_stop_sound(mu_noisechase);
 	audio_stop_sound(mu_dragonlair);
 	audio_stop_sound(mu_snickchallenge);
 	audio_stop_sound(mu_snickchallengeend);

@@ -128,7 +128,7 @@ function scr_pizzaball_golf()
 			m_meter += 0.25;
 			state = states.normal;
 			thrown = true;
-			sprite_index = spr_pizzaball_idle;
+			sprite_index = spr_pizzaball_roll;
 			meter = 0;
 			movespeed = abs(lengthdir_x(m_spd * m_meter, m_angle));
 			image_xscale = player.xscale;
