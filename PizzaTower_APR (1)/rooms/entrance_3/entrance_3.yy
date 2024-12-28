@@ -49,6 +49,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4C5C5622","properties":[],"isDnd":false,"objectId":{"name":"obj_forknight","path":"objects/obj_forknight/obj_forknight.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":681.0,"y":338.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C11FC49A","properties":[],"isDnd":false,"objectId":{"name":"obj_minijohn","path":"objects/obj_minijohn/obj_minijohn.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2004.0,"y":306.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_45C33202","properties":[],"isDnd":false,"objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2464.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F7AAD59","properties":[],"isDnd":false,"objectId":{"name":"obj_deadjohn2","path":"objects/obj_deadjohn2/obj_deadjohn2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1216.0,"y":384.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","tilesetId":{"name":"tile_entrancedeco","path":"tilesets/tile_entrancedeco/tile_entrancedeco.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":94,"SerialiseHeight":17,"TileCompressedData":[
 -185,0,2,62,63,-92,0,5,82,83,0,64,65,-92,0,2,84,85,-184,0,6,64,65,0,0,20,21,-88,0,6,84,85,0,0,40,41,-621,0,2,60,61,-92,0,2,80,81,-49,0,2,26,27,-28,0,2,22,23,-62,0,2,46,47,-28,0,2,42,43,-37,0,2,66,67,-5,0,],},"visible":true,"depth":300,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -94,6 +95,7 @@
     {"name":"inst_45C33202","path":"rooms/entrance_3/entrance_3.yy",},
     {"name":"inst_A9CCBE91","path":"rooms/entrance_3/entrance_3.yy",},
     {"name":"inst_D8CE3A12","path":"rooms/entrance_3/entrance_3.yy",},
+    {"name":"inst_6F7AAD59","path":"rooms/entrance_3/entrance_3.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

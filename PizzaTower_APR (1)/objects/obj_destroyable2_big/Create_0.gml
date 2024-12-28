@@ -1,4 +1,4 @@
-hp = 2;
+hp = 0;
 
 if (obj_player1.character == "P" && obj_player1.spotlight == true && obj_player1.ispeppino)
 {

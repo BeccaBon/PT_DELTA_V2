@@ -3,7 +3,22 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 	if (instance_exists(obj_pepperman))
 	{
 		audio_stop_all();
-		scr_sound(mu_snickchallengeend);
+		scr_sound(mu_pepperman);
+	}
+	if (instance_exists(obj_vigilanteboss))
+	{
+		audio_stop_all();
+		scr_sound(mu_vigilante);
+	}
+	if (instance_exists(obj_noiseboss))
+	{
+		audio_stop_all();
+		scr_sound(mu_miniboss);
+	}
+	if (instance_exists(obj_mrstickboss))
+	{
+		audio_stop_all();
+		scr_sound(mu_nakedstick);
 	}
 
 	roomname = room_get_name(room);

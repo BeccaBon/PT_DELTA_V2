@@ -251,7 +251,7 @@ function scr_collide_destructibles()
 					{
 						with (_obj_player)
 						{
-							if (place_meeting(x + hsp, y, obj_bigdestructibles))
+							if (place_meeting(x + hsp, y, obj_bigdestructibles)) or (place_meeting(x + hsp, y, obj_deadjohnparent))
 							{
 								sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch);
 								image_index = 0;
