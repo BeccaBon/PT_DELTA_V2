@@ -277,9 +277,21 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
         case "kungfu":
             global.mu = mu_kungfu
             break
-        case "city":
-            global.mu = mu_city
-            break
+		case "city":
+			for (var i = 0; i < 20; i++)
+			{
+				if (roomname == ("city_" + string(i)) && i <= 6)
+				{
+					global.mu = mu_city;
+				}
+				else if (roomname == ("city_" + string(i)) && i > 6)
+				{
+					global.mu = mu_cityb;
+				}
+			}
+
+			break;
+
         case "kidsparty":
             global.mu = mu_kidsparty
             break
