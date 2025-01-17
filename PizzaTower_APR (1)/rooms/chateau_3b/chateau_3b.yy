@@ -138,7 +138,7 @@
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Backgrounds_2","spriteId":{"name":"bg_chateau3","path":"sprites/bg_chateau3/bg_chateau3.yy",},"colour":4294967295,"x":0,"y":0,"htiled":true,"vtiled":true,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":600,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/medieval_3b/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/chateau_3b/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_85E510C4_1","path":"rooms/chateau_3b/chateau_3b.yy",},

@@ -83,7 +83,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 
 		case chateau_6:
 			global.minutes = 3;
-			global.seconds = 15;
+			global.seconds = 59;
 			break;
 
 		case strongcold_1:
