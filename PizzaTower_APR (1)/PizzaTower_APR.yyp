@@ -4020,6 +4020,7 @@
     {"id":{"name":"spr_supermetalblock","path":"sprites/spr_supermetalblock/spr_supermetalblock.yy",},"order":0,},
     {"id":{"name":"spr_pepperman_move","path":"sprites/spr_pepperman_move/spr_pepperman_move.yy",},"order":0,},
     {"id":{"name":"spr_tubeenter","path":"sprites/spr_tubeenter/spr_tubeenter.yy",},"order":0,},
+    {"id":{"name":"bg_dragonlair1alt","path":"sprites/bg_dragonlair1alt/bg_dragonlair1alt.yy",},"order":5,},
     {"id":{"name":"spr_player_mortthrow","path":"sprites/spr_player_mortthrow/spr_player_mortthrow.yy",},"order":0,},
     {"id":{"name":"spr_mrstick_tauntanim2","path":"sprites/spr_mrstick_tauntanim2/spr_mrstick_tauntanim2.yy",},"order":1,},
     {"id":{"name":"spr_robot_slap","path":"sprites/spr_robot_slap/spr_robot_slap.yy",},"order":0,},
