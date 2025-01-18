@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "tileset_chateau3",
   "spriteId": {
-    "name": "tilespr_tileset_chateau1",
-    "path": "sprites/tilespr_tileset_chateau1/tilespr_tileset_chateau1.yy",
+    "name": "tilespr_tileset_chateau3",
+    "path": "sprites/tilespr_tileset_chateau3/tilespr_tileset_chateau3.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
