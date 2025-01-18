@@ -136,7 +136,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Oregano Desert",
-    "path": "folders/Rooms/Levels/Oregano Desert.yy",
+    "name": "Oregano Desert (floor1)",
+    "path": "folders/Rooms/Unused/Oregano Desert (floor1).yy",
   },
 }

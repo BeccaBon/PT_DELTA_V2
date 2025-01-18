@@ -86,7 +86,7 @@ if (x != targetplayer.x && state != states.pizzagoblin_throw && bombreset == 0 &
 {
 	if ((targetplayer.x > (x - 400) && targetplayer.x < (x + 400)) && (y <= (targetplayer.y + 20) && y >= (targetplayer.y - 20)))
 	{
-		if (state == states.walk || state == states.idle)
+		if (state == states.walk || state == states.idle && obj_player1.state != states.firemouth)
 		{
 			sprite_index = spr_kentukykenny_throw;
 			image_index = 0;

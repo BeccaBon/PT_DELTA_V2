@@ -6,6 +6,7 @@ if (obj_player1.character == "V")
 if (other.object_index == obj_player1)
 {
 	global.collect += 25;
+		create_collect(x, y, spr_healthpickupeaten);
 }
 else
 {

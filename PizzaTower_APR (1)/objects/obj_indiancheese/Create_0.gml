@@ -1,6 +1,8 @@
 scr_initenemy();
 shot = false;
 grav = 0.5;
+totemID = -4;
+totemdir = 1;
 hsp = 0;
 vsp = 0;
 movespeed = 4;

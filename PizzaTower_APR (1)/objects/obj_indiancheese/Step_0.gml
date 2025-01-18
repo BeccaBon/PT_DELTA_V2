@@ -12,9 +12,11 @@ switch (state)
 		scr_enemy_turn();
 		break;
 
-	case states.walk:
-		scr_enemy_walk();
-		break;
+    case states.walk:
+        scr_enemy_walk()
+        if (totemID != noone)
+            state = (188 << 0)
+        break;
 
 	case states.land:
 		scr_enemy_land();
@@ -41,102 +43,92 @@ switch (state)
 		break;
 }
 
-scr_scareenemy();
-
-if (state == states.stun && stunned > 40 && birdcreated == false)
+scr_scareenemy()
+if (state == (188 << 0) && totemID != noone)
 {
-	birdcreated = true;
-
-	with (instance_create(x, y, obj_enemybird))
-	{
-		ID = other.id;
-	}
+    image_speed = 0.35
+    if (sprite_index != spr_indiancheese_dance)
+    {
+        var tx = totemID.x + 64 * totemdir
+        var on_place = (totemdir > 0 ? x > tx : x < tx)
+        if place_meeting((x + image_xscale), y, obj_solid)
+            on_place = 1
+        hsp = ((!on_place) ? (image_xscale * 3) : 0)
+        if (grounded && on_place)
+        {
+            sprite_index = spr_indiancheese_dance
+            image_index = 0
+            hsp = 0
+        }
+        if (sprite_index == spr_indiancheese_jump && floor(image_index) == (image_number - 1))
+            image_index = image_number - 1
+    }
+    else
+    {
+        hsp = 0
+        if (floor(image_index) == (image_number - 1))
+        {
+            totemdir = (x > totemID.x ? -1 : 1)
+            image_xscale = totemdir
+            sprite_index = spr_indiancheese_jump
+            vsp = -11
+        }
+    }
 }
-
+else if (state == (188 << 0) && totemID == -4)
+    state = states.walk
+if (state == states.stun && stunned > 40 && birdcreated == 0)
+{
+    birdcreated = 1
+    with (instance_create(x, y, obj_enemybird))
+        ID = other.id
+}
 if (state != states.stun)
-{
-	birdcreated = false;
-}
-
-if (flash == true && alarm[2] <= 0)
-{
-	alarm[2] = 0.15 * room_speed;
-}
-
-var player = instance_nearest(x, y, obj_player);
-
+    birdcreated = 0
+if (flash == 1 && alarm[2] <= 0)
+    alarm[2] = 0.15 * room_speed
+var player = instance_nearest(x, y, obj_player)
 if (global.stylethreshold >= 3 && ragecooldown > 0)
-{
-	ragecooldown--;
-}
-
+    ragecooldown--
 if (state == states.walk && sprite_index == walkspr && sprite_index != spr_indiancheese_scared && global.stylethreshold >= 3 && ragecooldown == 0)
 {
-	if ((player.x > (x - 400) && player.x < (x + 400)) && (y <= (player.y + 60) && y >= (player.y - 60)))
-	{
-		image_xscale = -sign(x - player.x);
-		state = states.rage;
-		sprite_index = spr_indiancheese_howl;
-		image_index = 0;
-		shot = false;
-		ragedash = 50;
-		hsp = 0;
-		flash = true;
-		alarm[4] = 5;
-		create_heatattack_afterimage(x, y, sprite_index, image_index, image_xscale);
-	}
+    if (player.x > (x - 400) && player.x < (x + 400) && y <= (player.y + 60) && y >= (player.y - 60))
+    {
+        image_xscale = (-(sign(x - player.x)))
+        state = states.rage
+        sprite_index = spr_indiancheese_howl
+        image_index = 0
+        shot = 0
+        ragedash = 50
+        hsp = 0
+        flash = 1
+        alarm[4] = 5
+        create_heatattack_afterimage(x, y, sprite_index, image_index, image_xscale)
+    }
 }
-
-if (state == states.walk && grounded && state != states.rage && place_meeting(x + (image_xscale * 10), y, obj_solid) && !place_meeting(x + (image_xscale * 10), y - 100, obj_solid))
-{
-	vsp = -11;
-	sprite_index = spr_indiancheese_jump;
-	image_index = 0;
-	state = states.charge;
-	instance_create(x, y, obj_highjumpcloud2);
-}
-
-if (!grounded && sprite_index == spr_indiancheese_jump && floor(image_index) == (image_number - 1))
-{
-	image_speed = 0;
-}
+if ((!grounded) && sprite_index == spr_indiancheese_jump && floor(image_index) == (image_number - 1))
+    image_speed = 0
 else if (image_speed == 0)
-{
-	image_speed = 0.35;
-}
-
+    image_speed = 0.35
 if (sprite_index == spr_indiancheese_land && floor(image_index) == (image_number - 1))
+    sprite_index = spr_indiancheese_walk
+if (hitboxcreate == 0 && state == states.walk)
 {
-	sprite_index = spr_indiancheese_walk;
+    hitboxcreate = 1
+    with (instance_create(x, y, obj_forkhitbox))
+        ID = other.id
 }
-
-if (hitboxcreate == false && state == states.walk)
-{
-	hitboxcreate = true;
-
-	with (instance_create(x, y, obj_forkhitbox))
-	{
-		ID = other.id;
-	}
-}
-
 if (state != states.grabbed)
-{
-	depth = 0;
-}
-
+    depth = 0
 if (state != states.stun)
+    thrown = 0
+if (boundbox == 0)
 {
-	thrown = false;
-}
-
-if (boundbox == false)
-{
-	with (instance_create(x, y, obj_baddiecollisionbox))
-	{
-		sprite_index = other.sprite_index;
-		mask_index = other.sprite_index;
-		baddieID = other.id;
-		other.boundbox = true;
-	}
+    with (instance_create(x, y, obj_baddiecollisionbox))
+    {
+        sprite_index = other.sprite_index
+        mask_index = other.sprite_index
+        baddieID = other.id
+        other.boundbox = 1
+    }
 }

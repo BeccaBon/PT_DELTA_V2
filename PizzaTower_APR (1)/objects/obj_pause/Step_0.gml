@@ -74,9 +74,9 @@ if (pause)
 					rm = dungeon_1;
 					break;
 
-				case "floorroom":
-				case "floorsecret":
-					rm = floor1_room0;
+				case "desert":
+				case "desertsecret":
+					rm = desert_1;
 					break;
 
 				case "graveyard":

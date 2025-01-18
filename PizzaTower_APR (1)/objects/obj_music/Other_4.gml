@@ -129,14 +129,14 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 
 			break;
 
-		case "floorroom":
+		case "desert":
 			for (var i = 0; i < 20; i++)
 			{
-				if (roomname == ("floor1_room" + string(i)) && i <= 9)
+				if (roomname == ("desert_" + string(i)) && i <= 12)
 				{
 					global.mu = mu_desert;
 				}
-				else if (roomname == ("floor1_room" + string(i)) && i > 9)
+				else if (roomname == ("desert_" + string(i)) && i > 12)
 				{
 					global.mu = mu_ufo;
 				}
@@ -209,7 +209,7 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 			global.mu = mu_dragonlair;
 			break;
 
-		case "floorsecret":
+		case "desertsecret":
 			global.mu = mu_desertsecret;
 			break;
 

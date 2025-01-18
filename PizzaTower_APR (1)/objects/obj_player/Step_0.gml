@@ -440,6 +440,9 @@ switch (state)
 	case states.trickjump:
 		scr_player_trickjump();
 		break;
+	case states.motorcycle:
+		scr_player_motorcycle();
+		break;
 }
 if (!scr_slope())
     angle = 0
@@ -684,7 +687,14 @@ if (state == states.gameover && y > (room_height * 2))
 		}
 	}
 }
-
+if (blur_effect > 0)
+    blur_effect--
+else if (state == states.tumble || state == states.handstandjump || (state == states.grab && sprite_index == spr_swingding) || (state == states.punch && (sprite_index == spr_player_breakdanceuppercut || sprite_index == spr_player_breakdanceuppercutend)) || state == states.freefall)
+{
+    blur_effect = 2
+    with (create_blur_afterimage(x, y, sprite_index, (image_index - 1), xscale))
+        playerid = other.id
+}
 if (state != states.pistol && state != states.normal)
 {
 	shoot = false;

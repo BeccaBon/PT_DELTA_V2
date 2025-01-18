@@ -3,6 +3,12 @@ if (instance_number(object_index) > 1)
 	instance_destroy();
 	exit;
 }
+blur_effect = 0;
+firemouth_dir = 1;
+jumped = 1;
+firemouth_max = 10;
+firemouth_buffer = firemouth_max;
+firemouth_afterimage = 0
 angle = 0;
 bombgrabID = -4
 knightmomentum = 0;

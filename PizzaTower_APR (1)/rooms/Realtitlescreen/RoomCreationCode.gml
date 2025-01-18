@@ -163,6 +163,7 @@ enum states
 	rocket = 156,
 	gotoplayer = 157,
 	trickjump = 158,
+	motorcycle
 }
 
 global.coop = false;
