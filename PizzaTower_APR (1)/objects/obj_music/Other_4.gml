@@ -145,16 +145,24 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 			break;
 
 		case "forest":
-			if (roomname == "forest_4" || roomname == "forest_4b")
+			for (var i = 0; i < 20; i++)
 			{
-				global.mu = mu_gustavo;
-			}
-			else
-			{
-				global.mu = mu_forest;
+				if (roomname == ("forest_" + string(i)) && i <= 3)
+				{
+					global.mu = mu_forest;
+				}
+				else if (roomname == ("forest_" + string(i)) && i > 3 && i <= 5)
+				{
+					global.mu = mu_gustavo;
+				}
+				else if (roomname == ("forest_" + string(i)) && i > 5)
+				{
+					global.mu = mu_forestb;
+				}
 			}
 
 			break;
+
 
 		case "chateau":
 			global.mu = mu_chateau;
@@ -280,11 +288,11 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 		case "city":
 			for (var i = 0; i < 20; i++)
 			{
-				if (roomname == ("city_" + string(i)) && i <= 6)
+				if (roomname == ("city_" + string(i)) && i <= 7)
 				{
 					global.mu = mu_city;
 				}
-				else if (roomname == ("city_" + string(i)) && i > 6)
+				else if (roomname == ("city_" + string(i)) && i > 7)
 				{
 					global.mu = mu_cityb;
 				}

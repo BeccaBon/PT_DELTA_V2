@@ -29,6 +29,14 @@ with (obj_player1)
 			audio_sound_pitch(global.mu, 0.9);
 			break;
 			
+		case states.cheesepepstickside:
+			audio_sound_pitch(global.mu, 0.9);
+			break;
+			
+		case states.cheesepepstickup:
+			audio_sound_pitch(global.mu, 0.9);
+			break;
+			
 		case states.tumble:
 			audio_sound_pitch(global.mu, 1.2);
 			break;

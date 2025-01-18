@@ -1075,7 +1075,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "PizzaTower_APR",
-    "path": "PizzaTower_APR.yyp",
+    "name": "Exit",
+    "path": "folders/Rooms/Levels/Exit.yy",
   },
 }
