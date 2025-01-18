@@ -178,7 +178,7 @@ global.autotile = true;
 global.font_small = font_add_sprite_ext(spr_smallfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!._1234567890:?", 1, -2);
 global.smallnumber_fnt = font_add_sprite_ext(spr_smallnumber, "1234567890-", 1, 0);
 pal_swap_init_system(shd_pal_swapper);
-
+global.gameframe_caption_text = "Pizza Tower Delta"
 with (obj_player1)
 {
 	state = states.normal;

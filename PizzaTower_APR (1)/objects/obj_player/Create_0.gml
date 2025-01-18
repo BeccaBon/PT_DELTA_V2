@@ -291,6 +291,9 @@ if (!variable_global_exists("saveroom"))
 	window_set_size(resolutionX, resolutionY);
 	set_master_gain(global.option_master_volume);
 	global.style = -1;
+	global.overscan_p = 1;
+	global.overscan_x = 1;
+	global.overscan_y = 1;
 	global.secretfound = 0;
 	global.shotgunammo = 0;
 	global.monsterspeed = 0;

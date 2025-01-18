@@ -1,4 +1,5 @@
 // Note added by UTMTCE: "GMS2.3 object function definitions" has been automatically enabled
+#macro debug (GM_build_type == "run")
 depth = -500
 GIVEKEY = new DebugCommand("givekey", "", "givekey", function() //gml_Script_anon_gml_Object_obj_debugcontroller_Create_0_259_gml_Object_obj_debugcontroller_Create_0
 {
