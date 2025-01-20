@@ -23,7 +23,6 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 		visible = true;
 		instance_create(x, y, obj_genericpoofeffect);
 	}
-    global.fill = 4000
 	scr_soundeffect(sfx_escaperumble);
 	obj_camera.alarm[1] = 60;
 	instance_create(x, y, obj_bangeffect);
@@ -62,23 +61,19 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 	switch (room)
 	{
 		case entrance_10:
-			global.minutes = 2;
-			global.seconds = 30;
+            global.fill = 1860;
 			break;
 
 		case medieval_10:
-			global.minutes = 2;
-			global.seconds = 15;
+            global.fill = 2040;
 			break;
 
 		case ruin_11:
-			global.minutes = 2;
-			global.seconds = 59;
+            global.fill = 2160;
 			break;
 
 		case dungeon_10:
-			global.minutes = 4;
-			global.seconds = 30;
+            global.fill = 2460;
 			break;
 
 		case chateau_6:
@@ -96,89 +91,72 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 			global.seconds = 59;
 			break;
 
-		case floor1_room11:
-			global.minutes = 2;
-			global.seconds = 30;
+		case desert_16:
+            global.fill = 2556;
 			break;
 
 		case graveyard_6:
-			global.minutes = 3;
-			global.seconds = 59;
+            global.fill = 2640;
 			break;
 
 		case farm_11:
-			global.minutes = 3;
-			global.seconds = 59;
+            global.fill = 1920;
 			break;
 
 		case ufo_12:
-			global.minutes = 2;
-			global.seconds = 30;
+            global.fill = 2100;
 			break;
 
 		case beach_13:
-			global.minutes = 3;
-			global.seconds = 30;
+            global.fill = 2220
 			break;
 
 		case forest_5:
-			global.minutes = 3;
-			global.seconds = 30;
+            global.fill = 2520;
 			break;
 
 		case kungfu_10:
-			global.minutes = 6;
-			global.seconds = 30;
+            global.fill = 4056;
 			break;
 
 		case minigolf_8:
-			global.minutes = 7;
-			global.seconds = 30;
+            global.fill = 3240;
 			break;
 
 		case space_9:
-			global.minutes = 5;
-			global.seconds = 30;
+            global.fill = 2220;
 			break;
 
 		case sewer_8:
-			global.minutes = 5;
-			global.seconds = 30;
+            global.fill = 3300;
 			break;
 
 		case city_11:
-			global.minutes = 5;
-			global.seconds = 30;
+            global.fill = 2280;
 			break;
 
 		case mansion_7:
-			global.minutes = 5;
-			global.seconds = 30;
+			global.fill = 4000;
 			break;
 
 		case factory_10:
-			global.minutes = 6;
-			global.seconds = 30;
+			global.fill = 4000;
 			break;
 
 		case freezer_3:
-			global.minutes = 5;
-			global.seconds = 30;
+			global.fill = 4000;
 			break;
 
 		case war_1:
-			global.minutes = 6;
-			global.seconds = 30;
+			global.fill = 4500;
 			break;
 
 		case exit_1:
-			global.minutes = 9;
-			global.seconds = 59;
+			global.fill = 5000;
 			break;
 
 		case kidsparty_lastroom:
-			global.minutes = 3;
-			global.seconds = 30;
+            global.fill = 2460;
 			break;
 
 		case custom_lvl_room:
