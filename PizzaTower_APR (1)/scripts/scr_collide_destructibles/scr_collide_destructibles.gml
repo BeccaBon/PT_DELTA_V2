@@ -111,17 +111,27 @@ function scr_collide_destructibles()
 				}
 			}
 
-			if ((state == states.knightpep || state == states.superslam || state == states.hookshot) && vsp > 0)
-			{
-				if (place_meeting(x, y + 1, obj_destructibles))
-				{
-					with (instance_place(x, y + 1, obj_destructibles))
-					{
-						GamepadSetVibration(0, 0.8, 0.5);
-						instance_destroy();
-					}
-				}
-			}
+            if ((state == states.knightpep || state == states.firemouth || state == states.slipbanan || state == states.superslam || state == states.hookshot || (state == states.bombpepup && bombup_dir == 1)) && vsp > 0)
+            {
+                if place_meeting(x, (y + 1), obj_destructibles)
+                {
+                    with (instance_place(x, (y + 1), obj_destructibles))
+                    {
+                        GamepadSetVibration(0, 0.8, 0.8, 0.5)
+                        instance_destroy()
+                    }
+                    if (state == states.firemouth)
+                    {
+                        with (instance_place(x, (y + 1), obj_tntblock))
+                        {
+                            GamepadSetVibration(0, 0.8, 0.8, 0.5)
+                            instance_destroy()
+                        }
+                        vsp = -11
+                        jumpstop = 0
+                    }
+                }
+            }
 
 			if (place_meeting(x, y + 1, obj_destructibleplatform))
 			{

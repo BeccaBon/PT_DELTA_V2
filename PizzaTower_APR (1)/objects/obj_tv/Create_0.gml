@@ -36,4 +36,16 @@ global.arank = 0;
 global.brank = 0;
 global.crank = 0;
 character = "PEPPINO";
+bar_surface = -4;
+barfill_x = 0;
+showtime_buffer = 0;
+timer_xstart = 327
+timer_ystart = 464
+timer_x = timer_xstart
+timer_y = timer_ystart + 212
+chunkmax = 0
+timer_xstart = 327
+timer_ystart = 464
+timer_x = timer_xstart
+timer_y = timer_ystart + 212
 display_set_gui_size(960, 540);

@@ -23,7 +23,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 		visible = true;
 		instance_create(x, y, obj_genericpoofeffect);
 	}
-
+    global.fill = 4000
 	scr_soundeffect(sfx_escaperumble);
 	obj_camera.alarm[1] = 60;
 	instance_create(x, y, obj_bangeffect);

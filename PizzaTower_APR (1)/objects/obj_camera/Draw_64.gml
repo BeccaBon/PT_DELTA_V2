@@ -195,17 +195,22 @@ if (obj_player.state != states.gameover)
 
 	if (global.panic || global.miniboss || global.timedgate)
 	{
-		var _seconds = global.seconds;
-		var _minutes = global.minutes;
+	var minutes = 0;
+	for (var seconds = ceil(global.fill / 12); seconds > 59; seconds -= 60)
+		minutes++;
+	if seconds < 10
+		seconds = concat("0", seconds);
+	else
+		seconds = string(seconds);
 		var _color = c_white;
 
-		if (_minutes == 0 && _seconds <= 30)
+		if (minutes == 0 && seconds <= 30)
 		{
 			_color = c_red;
 		}
 
-		var _middletext = (_seconds < 10) ? ":0" : ":";
-		draw_text_color(random_range(-1, 1) + 480, random_range(-1, 1) + 480, concat(_minutes, _middletext, _seconds), _color, _color, _color, _color, 1);
+		var _middletext = (seconds < 10) ? ":" : ":";
+		draw_text_color(random_range(-1, 1) + 480, random_range(-1, 1) + 480, concat(minutes, _middletext, seconds), _color, _color, _color, _color, 1);
 	}
 
 	if (obj_player1.character == "V")

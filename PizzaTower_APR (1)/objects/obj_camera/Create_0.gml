@@ -54,3 +54,7 @@ healthshake = 0;
 healthold = 8;
 healthshaketime = 0;
 playerhealthup = 0;
+timer_xstart = 327
+timer_ystart = 464
+timer_x = timer_xstart
+timer_y = timer_ystart + 212

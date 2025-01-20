@@ -367,3 +367,9 @@ if (showtext == 0)
     if (yi < 600)
         yi += 1
 }
+if (global.panic && global.fill > 0)
+{
+    showtime_buffer = 100
+
+        timer_y = Approach(timer_y, (timer_ystart + 212), 4)
+}

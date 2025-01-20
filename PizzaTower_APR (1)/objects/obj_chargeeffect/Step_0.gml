@@ -1,6 +1,6 @@
 image_xscale = playerid.xscale;
 
-if (playerid.state != states.rocket && playerid.state != states.mach3 && playerid.state != states.crouchslide && playerid.state != states.shoulderbash)
+if (playerid.state != states.rocket && playerid.state != states.mach3 && playerid.state != states.motorcycle && playerid.state != states.crouchslide && playerid.state != states.shoulderbash)
 {
 	instance_destroy();
 }

@@ -40,7 +40,6 @@ function scr_hurtplayer(argument0)
 		}
 		else if (state == states.parry) {}
 		else if (state == states.backbreaker || state == states.chainsaw) {}
-		else if (state == states.firemouth) {}
 		else if (state == states.fireass) {}
 		else if ((state == states.knightpep || state == states.knightpepattack || state == states.knightpepslopes) && cutscene == false) {}
 		else if (state == states.ghost) {}

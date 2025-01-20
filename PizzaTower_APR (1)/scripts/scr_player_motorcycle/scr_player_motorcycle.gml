@@ -22,6 +22,15 @@ function scr_player_motorcycle() //gml_Script_scr_player_motorcycle
         sprite_index = spr_player_pizzacarjump
         image_index = 0
     }
+	if (!instance_exists(motochargeeffectid))
+	{
+		with (instance_create(x + 5, y - 5, obj_motochargeeffect))
+		{
+			playerid = other.object_index;
+			other.motochargeeffectid = id;
+			depth = other.depth - 1;
+		}
+	}
     if ((!grounded) && (!key_jump2) && vsp < 0 && (!jumpstop))
     {
         vsp /= 10
@@ -33,7 +42,11 @@ function scr_player_motorcycle() //gml_Script_scr_player_motorcycle
 		hsp = -3.5 * xscale;
 		vsp = -6;
         state = states.bump
+		instance_create(x - 10, y + 10, obj_bumpeffect);
+		instance_create(x, y, obj_playerexplosion);
         sprite_index = spr_rockethitwall
+		scr_soundeffect(sfx_groundpound);
+		scr_soundeffect(sfx_bumpwall);
         var i = 0
         repeat (sprite_get_number(spr_pizzacar_debris) - 1)
         {

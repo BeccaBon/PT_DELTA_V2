@@ -158,6 +158,7 @@ stickpressed = false;
 spotlight = true;
 macheffect = false;
 chargeeffectid = obj_null;
+motochargeeffectid = obj_null;
 dashcloudid = obj_null;
 crazyruneffectid = obj_null;
 fightball = false;
