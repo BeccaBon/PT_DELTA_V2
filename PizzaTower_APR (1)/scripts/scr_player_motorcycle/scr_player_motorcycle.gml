@@ -24,7 +24,7 @@ function scr_player_motorcycle() //gml_Script_scr_player_motorcycle
     }
 	if (!instance_exists(motochargeeffectid))
 	{
-		with (instance_create(x + 5, y - 5, obj_motochargeeffect))
+		with (instance_create(x + 75, y - 5, obj_motochargeeffect))
 		{
 			playerid = other.object_index;
 			other.motochargeeffectid = id;

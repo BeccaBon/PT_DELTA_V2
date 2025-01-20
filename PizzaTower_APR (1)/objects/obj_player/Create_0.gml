@@ -178,6 +178,7 @@ tumble3snd = -1;
 superjumpholdsnd = -1;
 superjumpprepsnd = -1;
 suplexdashsnd = -1;
+motorcyclesnd = -1;
 pogospeed = 2;
 pogocharge = 100;
 pogochargeactive = false;

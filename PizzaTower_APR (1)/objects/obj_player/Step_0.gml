@@ -900,6 +900,7 @@ if (
 	|| state == states.cheeseball
 	|| state == states.slipbanan
 	|| state == states.shoulderbash
+	|| state == states.motorcycle
 )
 {
 	instakillmove = true;

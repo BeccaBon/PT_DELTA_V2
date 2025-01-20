@@ -16,7 +16,7 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tile_freezer","path":"tilesets/tile_freezer/tile_freezer.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":63,"SerialiseHeight":22,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_freezer","path":"tilesets/tileset_freezer/tileset_freezer.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":63,"SerialiseHeight":22,"TileCompressedData":[
 2,15,16,-12,0,9,66,0,0,66,0,66,0,0,66,-36,0,1,14,-4,15,1,16,-12,0,9,66,0,0,66,0,66,0,0,66,-36,0,1,14,-4,15,1,16,-12,0,9,66,0,0,66,0,66,0,0,66,-36,0,1,14,-4,15,1,16,
 -12,0,9,66,0,0,66,0,66,0,0,66,-36,0,1,14,-4,15,1,16,-12,0,9,66,0,0,66,0,66,0,0,66,-36,0,1,14,-4,15,1,16,-12,0,9,66,0,0,66,0,66,0,0,66,-36,0,1,24,-3,25,2,15,16,-61,0,
 2,15,16,-61,0,2,15,16,-10,0,-13,45,1,87,-37,0,2,15,16,-10,0,-13,66,2,44,87,-29,0,4,40,41,41,4,-3,5,2,15,16,-25,56,-32,0,1,14,-4,15,1,16,-57,0,1,14,-4,15,1,16,-54,0,4,40,41,42,14,

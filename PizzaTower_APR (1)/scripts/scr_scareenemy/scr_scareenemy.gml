@@ -13,6 +13,7 @@ function scr_scareenemy()
 				&& (
 					player.state == states.chainsawbump
 						|| player.state == states.mach3
+						|| player.state == states.motorcycle
 						|| player.state == states.rideweenie
 						|| player.state == states.rocket
 						|| player.state == states.tacklecharge

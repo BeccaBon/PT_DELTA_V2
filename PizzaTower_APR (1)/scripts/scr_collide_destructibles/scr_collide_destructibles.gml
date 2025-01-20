@@ -73,6 +73,7 @@ function scr_collide_destructibles()
 				|| state == states.mach2
 				|| state == states.chainsawbump
 				|| state == states.mach3
+				|| state == states.motorcycle
 				|| state == states.knightpep
 				|| state == states.machroll
 				|| state == states.knightpepslopes
@@ -157,6 +158,7 @@ function scr_collide_destructibles()
 						|| state == states.Sjump
 						|| state == states.mach2
 						|| state == states.mach3
+						|| state == states.motorcycle
 						|| (state == states.punch && (sprite_index == spr_player_breakdanceuppercut || sprite_index == spr_player_breakdanceuppercutend))
 				)
 			)

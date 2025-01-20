@@ -199,6 +199,7 @@ function baddiecollisionbox_update(argument0)
 				&& state != states.hurt
 				&& other.baddieID.state != states.chase
 				&& state != states.mach3
+				&& state != states.motorcycle
 				&& state != states.machroll
 				&& state != states.climbwall
 				&& other.baddieID.bumpable

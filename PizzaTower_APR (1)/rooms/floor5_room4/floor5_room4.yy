@@ -16,7 +16,7 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tile_freezer","path":"tilesets/tile_freezer/tile_freezer.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":32,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_freezer","path":"tilesets/tileset_freezer/tileset_freezer.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":32,"TileCompressedData":[
 -30,25,1,66,-28,0,-2,66,-28,0,-2,66,-28,0,-2,66,-28,0,-2,66,-28,0,-2,66,-28,0,-2,66,-3,41,
 2,66,4,-10,5,4,6,0,0,4,-8,5,3,6,66,66,-3,0,2,66,14,-10,15,4,16,0,0,14,-8,15,
 3,16,66,66,-3,0,2,66,24,-10,25,4,26,0,0,24,-8,25,3,26,66,66,-3,0,1,66,-24,0,-2,66,

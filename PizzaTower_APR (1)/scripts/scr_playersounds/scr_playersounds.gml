@@ -61,6 +61,15 @@ function scr_playersounds()
 		{
 			audio_stop_sound(mach4snd);
 		}
+		if (obj_player1.state == states.motorcycle && !audio_is_playing(sfx_motorcycle))
+		{
+			motorcyclesnd = audio_play_sound(sfx_motorcycle, 1, false);
+			sfx_gain(motorcyclesnd);
+		}
+		else if (obj_player1.state != states.motorcycle)
+		{
+			audio_stop_sound(motorcyclesnd);
+		}
 
 		if (state != states.Sjumpprep && audio_is_playing(superjumpprepsnd))
 		{
