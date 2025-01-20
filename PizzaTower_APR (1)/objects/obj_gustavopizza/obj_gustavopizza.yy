@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_gustavopizza",
   "spriteId": {
-    "name": "sprite1034",
-    "path": "sprites/sprite1034/sprite1034.yy",
+    "name": "spr_gustavocheckpoint",
+    "path": "sprites/spr_gustavocheckpoint/spr_gustavocheckpoint.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

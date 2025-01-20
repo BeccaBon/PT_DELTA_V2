@@ -19,12 +19,8 @@ function cutscene_customer_end(argument0, argument1) //gml_Script_cutscene_custo
 {
     with (obj_customeractor)
         happy = 1
-    with (instance_create((argument0.x - 1000), argument0.y, obj_taxi_cutscene))
     {
-        targetplayer = argument0
-        depth = -127
-        targetDoor = "E"
-        targetRoom = forest_4
+		other.state = states.normal
     }
     cutscene_end_action()
 }

@@ -16,6 +16,11 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_secret","path":"tilesets/tileset_secret/tileset_secret.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":43,"SerialiseHeight":17,"TileCompressedData":[
+-87,59,-37,49,-6,59,2,49,77,-33,65,2,79,49,-6,59,2,49,56,-33,0,2,54,49,-6,59,2,49,56,-33,0,2,54,49,-6,59,3,49,97,46,-32,0,2,
+54,49,-6,59,-2,49,1,56,-32,0,2,54,49,-6,59,-2,49,1,56,-32,0,2,54,49,-6,59,4,49,77,66,40,-5,41,1,42,-25,0,2,54,49,-5,59,-2,
+49,1,56,-30,0,5,44,45,45,99,49,-5,59,-2,65,1,66,-9,0,1,40,-11,41,1,42,-8,0,1,54,-4,49,-5,59,-33,0,2,54,49,-8,59,-12,0,1,
+74,-12,45,1,75,-7,0,2,54,49,-8,59,-12,45,1,84,-12,49,1,85,-7,45,2,99,49,-8,59,-14,49,-10,59,-11,49,-51,59,],},"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5E8BC719","properties":[],"isDnd":false,"objectId":{"name":"obj_giantcollect","path":"objects/obj_giantcollect/obj_giantcollect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E33E4581","properties":[],"isDnd":false,"objectId":{"name":"obj_secretfound","path":"objects/obj_secretfound/obj_secretfound.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":256.0,},

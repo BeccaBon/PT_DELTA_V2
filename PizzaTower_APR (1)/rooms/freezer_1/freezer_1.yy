@@ -236,7 +236,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "PizzaTower_APR",
-    "path": "PizzaTower_APR.yyp",
+    "name": "Freezerator",
+    "path": "folders/Rooms/Levels/Freezerator.yy",
   },
 }

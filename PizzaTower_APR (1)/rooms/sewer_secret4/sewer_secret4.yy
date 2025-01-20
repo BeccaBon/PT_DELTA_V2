@@ -16,6 +16,15 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_secret","path":"tilesets/tileset_secret/tileset_secret.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":27,"TileCompressedData":[
+-35,59,-21,49,-9,59,2,49,77,-17,65,2,79,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,
+0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,
+0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,
+0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,
+0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,
+0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,
+0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-17,0,2,54,49,-9,59,2,49,56,-16,
+0,3,74,84,49,-9,59,2,49,97,-16,45,3,84,49,49,-9,59,-20,49,-65,59,],},"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C845CC43","properties":[],"isDnd":false,"objectId":{"name":"obj_giantcollect","path":"objects/obj_giantcollect/obj_giantcollect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CF83ABB","properties":[],"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":704.0,},

@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tile Sets-Export",
-    "path": "folders/Tile Sets-Export.yy",
+    "name": "Freezer",
+    "path": "folders/Sprites/Level Assets/Tilesets/Freezer.yy",
   },
 }

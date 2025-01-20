@@ -876,7 +876,7 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Freezer",
+    "path": "folders/Tile Sets/Levels/Freezer.yy",
   },
 }
