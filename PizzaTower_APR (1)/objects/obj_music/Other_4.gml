@@ -132,11 +132,11 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 		case "desert":
 			for (var i = 0; i < 20; i++)
 			{
-				if (roomname == ("desert_" + string(i)) && i <= 12)
+				if (roomname == ("desert_" + string(i)) && i <= 11)
 				{
 					global.mu = mu_desert;
 				}
-				else if (roomname == ("desert_" + string(i)) && i > 12)
+				else if (roomname == ("desert_" + string(i)) && i > 11)
 				{
 					global.mu = mu_ufo;
 				}
@@ -288,11 +288,11 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 		case "city":
 			for (var i = 0; i < 20; i++)
 			{
-				if (roomname == ("city_" + string(i)) && i <= 7)
+				if (roomname == ("city_" + string(i)) && i <= 6)
 				{
 					global.mu = mu_city;
 				}
-				else if (roomname == ("city_" + string(i)) && i > 7)
+				else if (roomname == ("city_" + string(i)) && i > 6)
 				{
 					global.mu = mu_cityb;
 				}
