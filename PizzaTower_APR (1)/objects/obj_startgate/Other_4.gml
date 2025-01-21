@@ -102,6 +102,6 @@ switch (level)
 		break;
 
 	case "snickchallenge":
-		msg = "SNICK CHALLENGE";
+		msg = "STICK CHALLENGE";
 		break;
 }

@@ -4,7 +4,7 @@
 	}
 scr_soundeffect(sfx_collecttopping);
 
-
+ds_list_add(global.saveroom, id);
 
 
 

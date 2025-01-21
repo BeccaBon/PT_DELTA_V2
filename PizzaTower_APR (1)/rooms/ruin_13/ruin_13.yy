@@ -188,6 +188,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_A9832648","properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":512.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2E4794B0","properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":992.0,"y":448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B3FA0228","properties":[],"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5217EF8A","properties":[],"isDnd":false,"objectId":{"name":"obj_snickchallengedoor","path":"objects/obj_snickchallengedoor/obj_snickchallengedoor.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":288.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4261A0C3","properties":[],"isDnd":false,"objectId":{"name":"obj_doorA","path":"objects/obj_doorA/obj_doorA.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":352.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","tilesetId":{"name":"tile_ruindeco","path":"tilesets/tile_ruindeco/tile_ruindeco.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":79,"SerialiseHeight":60,"TileCompressedData":[
 -6,0,3,107,108,109,-27,0,2,121,122,-47,0,3,127,128,129,-19,0,2,85,86,-6,0,2,141,142,-47,0,7,147,148,149,0,0,1,2,-3,0,2,23,24,-10,0,2,105,106,-10,0,2,43,44,-4,0,2,63,64,-33,0,2,23,24,-29,0,2,3,4,-11,0,2,83,84,-166,0,2,161,162,-73,0,
@@ -398,6 +400,8 @@
     {"name":"inst_A9832648","path":"rooms/ruin_13/ruin_13.yy",},
     {"name":"inst_2E4794B0","path":"rooms/ruin_13/ruin_13.yy",},
     {"name":"inst_B3FA0228","path":"rooms/ruin_13/ruin_13.yy",},
+    {"name":"inst_5217EF8A","path":"rooms/ruin_13/ruin_13.yy",},
+    {"name":"inst_4261A0C3","path":"rooms/ruin_13/ruin_13.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

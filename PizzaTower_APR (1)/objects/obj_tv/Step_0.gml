@@ -66,6 +66,7 @@ switch (state)
 
 		switch (_state)
 		{
+
 			case states.knightpep:
 			case states.knightpepattack:
 			case states.knightpepslopes:
@@ -105,8 +106,24 @@ switch (state)
 				}
 
 				break;
-
 			case states.normal:
+				with (obj_player1)
+				{
+					if (state == states.mach3 && sprite_index == spr_crazyrun)
+						other.idlespr = spr_tv_exprmach3
+					if (state == states.mach3 && sprite_index == spr_mach4)
+						other.idlespr = spr_tv_exprmach4;
+					if (global.combo >= 3)
+						other.idlespr = spr_tv_exprcombo;
+					if (global.stylethreshold >= 3)
+						other.idlespr = spr_tv_exprheat
+				}
+				if (global.panic)
+				{
+					other.idlespr = spr_tv_exprpanic;
+				}
+				else
+					idlespr = spr_tv_idle;
 			case states.jump:
 			case states.handstandjump:
 			case states.crouch:

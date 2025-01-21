@@ -75,6 +75,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16F88E1D","properties":[],"isDnd":false,"objectId":{"name":"obj_tvtrigger","path":"objects/obj_tvtrigger/obj_tvtrigger.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":3.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":672.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22311902","properties":[],"isDnd":false,"objectId":{"name":"obj_boxofpizza","path":"objects/obj_boxofpizza/obj_boxofpizza.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":800.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_42E1948C","properties":[],"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1040.0,"y":736.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FE1A7B","properties":[],"isDnd":false,"objectId":{"name":"obj_snickexe","path":"objects/obj_snickexe/obj_snickexe.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1376.0,"y":-64.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_3","tilesetId":{"name":"tile_medievaldeco","path":"tilesets/tile_medievaldeco/tile_medievaldeco.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":79,"SerialiseHeight":32,"TileCompressedData":[
 -202,0,3,60,61,62,-27,0,3,14,15,16,-10,0,8,85,86,87,88,89,90,91,92,-28,0,3,80,81,82,-27,0,3,34,35,36,-10,0,8,105,106,107,108,109,110,111,112,-28,0,3,100,101,102,-27,0,3,54,55,56,-10,0,8,125,126,127,128,129,130,131,132,-28,0,3,120,121,122,-27,0,3,74,
@@ -161,6 +162,7 @@
     {"name":"inst_16F88E1D","path":"rooms/medieval_1/medieval_1.yy",},
     {"name":"inst_22311902","path":"rooms/medieval_1/medieval_1.yy",},
     {"name":"inst_42E1948C","path":"rooms/medieval_1/medieval_1.yy",},
+    {"name":"inst_1FE1A7B","path":"rooms/medieval_1/medieval_1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
