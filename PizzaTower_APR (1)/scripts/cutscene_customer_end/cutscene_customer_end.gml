@@ -20,8 +20,10 @@ function cutscene_customer_end(argument0, argument1) //gml_Script_cutscene_custo
     with (obj_customeractor)
         happy = 1
     {
-		other.state = states.normal
+		with (obj_player1)
+		state = states.normal
+		cutscene_end_action()
     }
-    cutscene_end_action()
+    //cutscene_end_action()
 }
 
