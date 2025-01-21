@@ -17,7 +17,7 @@
   "soundFile": "sfx_scream10",
   "duration": 0.905,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "scream contest",
+    "path": "folders/Sounds/scream contest.yy",
   },
 }

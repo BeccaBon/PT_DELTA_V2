@@ -15,9 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_scream3",
-  "duration": 2.834,
+  "duration": 2.834286,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "scream contest",
+    "path": "folders/Sounds/scream contest.yy",
   },
 }

@@ -26,3 +26,5 @@ if (state == states.normal)
 }
 
 scr_collide();
+
+

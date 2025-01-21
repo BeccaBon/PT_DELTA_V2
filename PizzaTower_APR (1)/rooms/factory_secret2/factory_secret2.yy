@@ -16,6 +16,23 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_secret","path":"tilesets/tileset_secret/tileset_secret.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":44,"TileCompressedData":[
+-37,59,-16,49,-14,59,2,49,77,-4,65,2,79,77,-6,65,2,79,49,-14,59,2,49,56,-4,0,2,54,56,-6,
+0,2,54,49,-14,59,2,49,56,-4,0,2,54,56,-6,0,2,54,49,-14,59,2,49,56,-4,0,2,64,66,-6,
+0,2,54,49,-14,59,2,49,56,-12,0,2,54,49,-14,59,2,49,97,-5,45,1,46,-3,0,5,47,0,0,54,
+49,-14,59,-7,49,1,56,-3,0,-3,47,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,
+0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,
+0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,5,49,56,0,0,47,-3,0,2,54,49,-20,59,2,
+49,56,-3,47,-3,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,
+59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,
+59,2,49,56,-3,0,5,47,0,0,54,49,-20,59,2,49,56,-3,0,-3,47,2,54,49,-20,59,2,49,56,-6,
+0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,
+0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,2,49,56,-6,0,2,54,49,-20,59,5,49,56,0,
+0,47,-3,0,2,54,49,-20,59,2,49,56,-3,47,-3,0,2,54,49,-10,59,-11,49,1,56,-6,0,2,54,49,
+-10,59,2,49,77,-8,65,2,79,56,-6,0,2,54,49,-10,59,2,49,56,-8,0,2,64,66,-6,0,2,54,49,
+-10,59,2,49,56,-16,0,2,54,49,-10,59,2,49,56,-16,0,2,54,49,-10,59,2,49,97,-3,45,1,46,-12,
+0,2,54,49,-10,59,-5,49,1,56,-12,0,2,54,49,-14,59,2,49,56,-11,0,3,74,85,49,-14,59,2,49,
+97,-11,45,3,84,85,49,-14,59,-16,49,-67,59,],},"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E7998B91","properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":1088.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C5CF909","properties":[],"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":1152.0,},

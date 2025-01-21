@@ -37,6 +37,8 @@ switch (state)
 		break;
 }
 
+scr_scareenemy();
+
 if (state == states.stun && stunned > 40 && birdcreated == false)
 {
 	birdcreated = true;

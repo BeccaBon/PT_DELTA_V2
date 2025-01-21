@@ -96,6 +96,13 @@ if (x != targetplayer.x && targetplayer.state != states.bombpep && state != stat
 			image_index = 0;
 			image_xscale = -sign(x - targetplayer.x);
 			state = states.pizzagoblin_throw;
+			if !obj_player1.ispeppino && !provoked
+			{
+				sprite_index = spr_archergoblin_wave;
+				image_speed = 0.35
+				state = states.stun;
+			}
+			provoked = false;
 		}
 	}
 }

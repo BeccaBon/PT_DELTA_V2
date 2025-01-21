@@ -81,7 +81,7 @@ with (obj_player)
 								|| state == states.mach2
 								|| state == states.mach3
 								|| state == states.Sjumpprep
-								|| (state == states.punch && sprite_index == spr_player_breakdanceuppercut)
+								|| (state == states.punch && sprite_index == spr_breakdanceuppercut)
 						)
 				) || ((state == states.Sjump || state == states.Sjumpland) && !place_meeting(x, y - 1, obj_destructibles) && place_meeting(x, y - 1, other))
 			)

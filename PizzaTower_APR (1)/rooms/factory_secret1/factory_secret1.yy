@@ -16,6 +16,14 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_secret","path":"tilesets/tileset_secret/tileset_secret.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":39,"SerialiseHeight":57,"TileCompressedData":[
+-298,59,-10,49,-29,59,2,49,77,-6,65,2,79,49,-29,59,2,49,56,-6,0,2,54,49,-29,59,2,49,56,-6,0,2,54,49,-29,59,2,49,56,
+-6,0,2,54,49,-29,59,2,49,56,-6,0,2,54,49,-7,59,-20,49,-2,59,2,49,56,-6,0,2,54,49,-7,59,2,49,77,-16,65,6,79,49,
+59,59,49,56,-6,0,2,54,49,-7,59,2,49,56,-16,0,14,54,49,59,59,49,97,45,46,0,0,44,45,99,49,-7,59,2,49,56,-16,0,14,
+54,49,59,59,49,77,65,66,0,0,64,65,79,49,-7,59,2,49,56,-16,0,6,54,49,59,59,49,56,-6,0,2,54,49,-7,59,2,49,56,-16,
+0,6,54,49,59,59,49,56,-6,0,2,54,49,-4,59,-4,49,1,56,-16,0,1,54,-4,49,1,56,-6,0,2,54,49,-4,59,-4,65,1,66,-16,
+0,1,64,-4,65,1,66,-6,0,2,54,49,-4,59,-33,0,2,54,49,-4,59,-12,45,1,46,-20,0,2,54,49,-4,59,-12,49,1,97,-20,45,2,
+99,49,-15,59,-24,49,-1252,59,],},"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3839A526","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":15.0,"scaleY":14.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-320.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_BDFC139E","properties":[],"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":23.0,"scaleY":5.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-320.0,"y":704.0,},

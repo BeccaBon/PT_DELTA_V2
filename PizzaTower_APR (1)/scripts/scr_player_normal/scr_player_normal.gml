@@ -389,7 +389,7 @@ function state_player_normal()
 			{
 				state = states.punch;
 				image_index = 0;
-				sprite_index = spr_player_breakdanceuppercut;
+				sprite_index = spr_breakdanceuppercut;
 				if ispeppino
 					vsp = -14;
 				else

@@ -16,6 +16,12 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1024,"hview":768,"xport":0,"yport":0,"wport":1024,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"tileset_secret","path":"tilesets/tileset_secret/tileset_secret.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":49,"SerialiseHeight":32,"TileCompressedData":[
+-252,59,-9,49,-40,59,2,49,77,-5,65,2,79,49,-40,59,2,49,56,-5,0,2,54,49,-40,59,2,49,56,-5,0,2,54,49,-40,59,2,49,56,-5,0,1,54,-31,49,-4,59,-7,49,
+1,56,-5,41,1,64,-29,65,2,79,49,-4,59,2,49,77,-5,65,1,66,-35,0,2,54,49,-4,59,2,49,56,-14,0,-12,47,-15,0,2,54,49,-4,59,2,49,56,-12,0,2,40,42,
+-12,0,2,40,42,-13,0,2,54,49,-4,59,2,49,56,-41,0,2,54,49,-4,59,2,49,56,-41,0,2,54,49,-4,59,2,49,97,-5,45,1,46,-6,0,2,40,42,-12,0,2,40,42,
+-13,0,2,54,49,-4,59,-7,49,1,56,-25,0,1,44,-5,45,1,46,-3,0,2,54,49,-10,59,2,49,56,-25,0,1,54,-5,49,1,56,-3,0,2,54,49,-10,59,2,49,97,-7,45,
+1,46,-12,0,1,44,-4,45,2,99,49,-3,59,2,49,97,-3,45,2,99,49,-10,59,-9,49,1,97,-12,45,1,99,-6,49,-3,59,-7,49,-18,59,-16,49,-508,59,],},"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_06B7A504","properties":[],"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_8B6B237C","properties":[],"isDnd":false,"objectId":{"name":"obj_doorC","path":"objects/obj_doorC/obj_doorC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":288.0,},

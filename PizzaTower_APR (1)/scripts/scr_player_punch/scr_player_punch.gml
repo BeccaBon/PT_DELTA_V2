@@ -6,7 +6,7 @@ function scr_player_punch()
 		case "N":
 			move = key_left + key_right;
 
-			if (sprite_index == spr_player_breakdanceuppercut || sprite_index == spr_player_breakdanceuppercutend)
+			if (sprite_index == spr_breakdanceuppercut || sprite_index == spr_breakdanceuppercutend)
 			{
 				hsp = move * movespeed;
 			}
@@ -22,13 +22,13 @@ function scr_player_punch()
 				movespeed = 14;
 			}
 
-			if (floor(image_index) == (image_number - 1) && sprite_index == spr_player_breakdanceuppercut)
+			if (floor(image_index) == (image_number - 1) && sprite_index == spr_breakdanceuppercut)
 			{
 				state = states.jump;
-				sprite_index = spr_player_breakdanceuppercutend;
+				sprite_index = spr_breakdanceuppercutend;
 			}
 
-			if (grounded && vsp > 0 && (sprite_index == spr_player_breakdanceuppercut || sprite_index == spr_player_breakdanceuppercutend))
+			if (grounded && vsp > 0 && (sprite_index == spr_breakdanceuppercut || sprite_index == spr_breakdanceuppercutend))
 			{
 				state = states.jump;
 			}
@@ -59,7 +59,7 @@ function scr_player_punch()
 				movespeed = 12;
 			}
 
-			if (sprite_index == spr_player_breakdanceuppercut && floor(image_index) == (image_number - 1))
+			if (sprite_index == spr_breakdanceuppercut && floor(image_index) == (image_number - 1))
 			{
 				image_index = image_number - 1;
 			}

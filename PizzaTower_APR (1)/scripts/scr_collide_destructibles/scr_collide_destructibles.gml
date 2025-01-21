@@ -159,13 +159,13 @@ function scr_collide_destructibles()
 						|| state == states.mach2
 						|| state == states.mach3
 						|| state == states.motorcycle
-						|| (state == states.punch && (sprite_index == spr_player_breakdanceuppercut || sprite_index == spr_player_breakdanceuppercutend))
+						|| (state == states.punch && (sprite_index == spr_breakdanceuppercut || sprite_index == spr_breakdanceuppercutend))
 				)
 			)
 			{
 				var vy = -1;
 
-				if (state == states.punch && (sprite_index == spr_player_breakdanceuppercut || sprite_index == spr_player_breakdanceuppercutend))
+				if (state == states.punch && (sprite_index == spr_breakdanceuppercut || sprite_index == spr_breakdanceuppercutend))
 				{
 					vy = vsp;
 				}
