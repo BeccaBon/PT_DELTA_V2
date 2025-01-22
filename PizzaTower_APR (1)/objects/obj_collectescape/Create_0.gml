@@ -1,28 +1,8 @@
-if (room == rm_editor)
-{
-	exit;
-}
-
-with (other)
-{
-	if ((obj_player1.character == "P" && obj_player1.spotlight == true) || (obj_player2.character == "P" && obj_player1.spotlight == false))
-	{
-		sprite_index = choose(spr_clockcollectible1, spr_clockcollectible2);
-	}
-
-	if ((obj_player1.character == "N" && obj_player1.spotlight == true) || (obj_player2.character == "N" && obj_player1.spotlight == false))
-	{
-		sprite_index = choose(spr_halloweencollectibles1, spr_halloweencollectibles2, spr_halloweencollectibles3, spr_halloweencollectibles4, spr_halloweencollectibles5);
-	}
-
-	image_speed = 0.35;
-	global.collected = 0;
-	global.collectsound = 0;
-}
-
-if (obj_player.character == "S")
-{
-	sprite_index = spr_snickcollectible1;
-}
-
-depth = 11;
+image_speed = 0.35
+global.collected = false
+global.collectsound = 0
+depth = 11
+image_alpha = 0.35
+gotowardsplayer = false
+movespeed = 5
+sprite_index = choose(spr_escapecollect1, spr_escapecollect2)

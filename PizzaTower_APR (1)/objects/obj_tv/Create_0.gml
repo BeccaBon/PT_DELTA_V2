@@ -48,4 +48,9 @@ timer_xstart = 327
 timer_ystart = 464
 timer_x = timer_xstart
 timer_y = timer_ystart + 212
+tv_x = 833
+tv_y = 107
+state = states.normal;
+expressionsprite = -4;
+expressionbuffer = 0;
 display_set_gui_size(960, 540);

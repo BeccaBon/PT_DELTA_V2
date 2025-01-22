@@ -1,5 +1,7 @@
 enum states
 {
+	tv_whitenoise,
+	tv_expression,
 	normal = 0,
 	revolver = 1,
 	dynamite = 2,

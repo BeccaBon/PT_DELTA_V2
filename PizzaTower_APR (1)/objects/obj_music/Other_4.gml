@@ -1,25 +1,6 @@
 if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_exists(obj_hungrypillar))
 {
-	if (instance_exists(obj_pepperman))
-	{
-		audio_stop_all();
-		scr_sound(mu_pepperman);
-	}
-	if (instance_exists(obj_vigilanteboss))
-	{
-		audio_stop_all();
-		scr_sound(mu_vigilante);
-	}
-	if (instance_exists(obj_noiseboss))
-	{
-		audio_stop_all();
-		scr_sound(mu_miniboss);
-	}
-	if (instance_exists(obj_mrstickboss))
-	{
-		audio_stop_all();
-		scr_sound(mu_nakedstick);
-	}
+
 
 	roomname = room_get_name(room);
 	global.mu = noone;
@@ -29,6 +10,26 @@ if (!global.panic && global.combo < 50 && !global.snickchallenge && !instance_ex
 	{
 		case "rmlevelselect":
 			global.mu = noone;
+			trackposition = 0;
+			break;
+
+		case "boss_pepperman":
+			global.mu = mu_pepperman;
+			trackposition = 0;
+			break;
+	
+		case "boss_vigilante":
+			global.mu = mu_vigilante;
+			trackposition = 0;
+			break;
+
+		case "boss_noise":
+			global.mu = mu_miniboss;
+			trackposition = 0;
+			break;
+
+		case "boss_mrstick":
+			global.mu = mu_nakedstick;
 			trackposition = 0;
 			break;
 

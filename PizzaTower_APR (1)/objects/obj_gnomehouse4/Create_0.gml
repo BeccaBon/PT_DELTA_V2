@@ -1,5 +1,5 @@
 event_inherited();
-content = obj_pizzakintomato;
+content = obj_pizzakinsausage;
 gnome_id = 3;
 customer_x = 27;
 customer_y = 144;

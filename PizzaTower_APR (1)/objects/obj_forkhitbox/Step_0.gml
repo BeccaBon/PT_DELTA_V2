@@ -12,7 +12,7 @@ if (instance_exists(ID))
 
 	with (ID)
 	{
-		if (object_index == obj_coolpineapple || object_index == obj_forknight || object_index == obj_noisey || object_index == obj_smokingpizzaslice)
+		if (object_index == obj_coolpineapple || object_index == obj_forknight || object_index == obj_ghostknight || object_index == obj_noisey || object_index == obj_smokingpizzaslice)
 		{
 			if (state != states.walk && state != states.rage)
 			{

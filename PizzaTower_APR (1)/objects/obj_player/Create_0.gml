@@ -3,6 +3,14 @@ if (instance_number(object_index) > 1)
 	instance_destroy();
 	exit;
 }
+hallway = 0
+savedhallway = 0
+hallwaydirection = 0
+savedhallwaydirection = 0
+vhallwaydirection = 0
+savedvhallwaydirection = 0
+verticalhallway = 0
+savedverticalhallway = 0
 blur_effect = 0;
 firemouth_dir = 1;
 jumped = 1;
@@ -237,6 +245,7 @@ freefallvsp = 15;
 
 if (!variable_global_exists("saveroom"))
 {
+	global.hidetiles = false;
 	global.saveroom = ds_list_create();
 	global.playerhealth = 100;
 	global.instancelist = ds_list_create();

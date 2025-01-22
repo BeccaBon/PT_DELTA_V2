@@ -20,7 +20,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 
 	with (obj_collectescape)
 	{
-		visible = true;
+		image_alpha = 1;
 		instance_create(x, y, obj_genericpoofeffect);
 	}
 	scr_soundeffect(sfx_escaperumble);
@@ -56,6 +56,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 
 	scr_soundeffect(sfx_killenemy);
 	instance_create(x, y + 600, obj_itspizzatime);
+	scr_soundeffect(sfx_scream10, sfx_scream1, sfx_scream2, sfx_scream3, sfx_scream4, sfx_scream5, sfx_scream6, sfx_scream7, sfx_scream8, sfx_scream9, sfx_scream11, sfx_scream12, sfx_scream13)
 	global.panic = true;
 
 	switch (room)

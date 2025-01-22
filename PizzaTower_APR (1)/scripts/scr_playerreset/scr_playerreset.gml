@@ -132,24 +132,25 @@ function scr_playerreset()
 			instance_destroy(obj_toppinwarrior);
 		}
 
-		with (obj_tv)
-		{
-			shownranka = 0;
-			shownrankb = 0;
-			shownrankc = 0;
-			ds_list_clear(tvprompts_list);
-			prompt = "";
-			bubblespr = noone;
-			promptx = promptxstart;
-
-			if (!global.levelreset)
-			{
-				sprite_index = spr_tv_off;
-				tvsprite = spr_tv_idle;
-				state = states.normal;
-				tv_set_idle();
-			}
-		}
+        with (obj_tv)
+        {
+            shownranka = false
+            shownrankb = false
+            shownrankc = false
+            ds_list_clear(tvprompts_list)
+            prompt = ""
+            bubblespr = -4
+            promptx = promptxstart
+            tv_bg_index = 0
+            expressionsprite = -4
+            if (!global.levelreset)
+            {
+                sprite_index = spr_tv_off
+                tvsprite = spr_tv_idle
+                state = states.normal
+                tv_set_idle()
+            }
+        }
 
 		global.SAGEshotgunsnicknumber = 0;
 		obj_music.fadeoff = 0;
