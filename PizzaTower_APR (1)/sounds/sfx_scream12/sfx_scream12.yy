@@ -4,7 +4,7 @@
   "name": "sfx_scream12",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.16,
+  "volume": 0.26,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,

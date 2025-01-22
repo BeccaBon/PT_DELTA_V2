@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ghostpizzard",
   "spriteId": {
-    "name": "spr_pizzard_walk",
-    "path": "sprites/spr_pizzard_walk/spr_pizzard_walk.yy",
+    "name": "spr_ghostpizzardtemp",
+    "path": "sprites/spr_ghostpizzardtemp/spr_ghostpizzardtemp.yy",
   },
   "solid": false,
   "visible": true,

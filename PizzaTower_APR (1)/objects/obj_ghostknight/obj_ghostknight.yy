@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ghostknight",
   "spriteId": {
-    "name": "spr_forknight_idle",
-    "path": "sprites/spr_forknight_idle/spr_forknight_idle.yy",
+    "name": "spr_ghostknighttemp",
+    "path": "sprites/spr_ghostknighttemp/spr_ghostknighttemp.yy",
   },
   "solid": false,
   "visible": true,
