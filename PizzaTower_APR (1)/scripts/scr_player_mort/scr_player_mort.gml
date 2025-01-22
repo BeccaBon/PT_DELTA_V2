@@ -1,158 +1,126 @@
 function scr_player_mort()
 {
-	move = key_right + key_left;
-
-	if (sprite_index != spr_player_mortattack)
+	move = (key_right + key_left)
+	hsp = movespeed
+	mort = 0
+	doublejump = 0
+	jumpstop = 0
+	if key_jump
+		input_buffer_jump = 0
+	if (move != 0)
 	{
-		hsp = movespeed * move;
+		if (move == xscale)
+			movespeed = Approach(movespeed, (xscale * 8), 0.8)
+		else
+			movespeed = Approach(movespeed, 0, 0.8)
+		if (movespeed <= 0)
+			xscale = move
 	}
 	else
+		movespeed = Approach(movespeed, 0, 0.8)
+	if (movespeed < 3 && move != 0)
+		image_speed = 0.35
+	else if (movespeed > 3 && movespeed < 6)
+		image_speed = 0.45
+	else
+		image_speed = 0.6
+	if (place_meeting((x + sign(hsp)), y, obj_solid) && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
 	{
-		hsp = movespeed * xscale;
+		movespeed = 0
+		if (sprite_index == spr_player_barrelmove)
+			sprite_index = spr_player_barrelidle
 	}
-
-	if (vsp > 1 && key_jump2)
-	{
-		vsp = 1;
-	}
-	else if (vsp > 8)
-	{
-		vsp = 8;
-	}
-
-	if (!key_jump2 && jumpstop == false && vsp < 0.5)
-	{
-		vsp /= 10;
-		jumpstop = true;
-	}
-
-	if (place_meeting(x + hsp, y, obj_solid) && !scr_slope())
-	{
-		movespeed = 0;
-	}
-
-	if (key_slap2 && sprite_index != spr_player_mortattack)
-	{
-		image_index = 5;
-		sprite_index = spr_player_mortattack;
-	}
-
-	if (sprite_index == spr_player_mortattack)
-	{
-		if (floor(image_index) == 6)
-		{
-			movespeed = 12;
-
-			with (instance_create(x, y, obj_morthitbox))
-			{
-				playerid = other.object_index;
-				image_xscale = other.xscale;
-			}
-		}
-		else if (movespeed > 0)
-		{
-			movespeed -= 0.2;
-		}
-	}
-
-	if (sprite_index == spr_player_mortdash && floor(image_index) == (image_number - 1))
-	{
-		sprite_index = spr_player_mortidle;
-		grav = 0.25;
-	}
-
-	if (sprite_index == spr_player_mortattack && floor(image_index) == (image_number - 1))
-	{
-		sprite_index = spr_player_mortidle;
-	}
-
-	if (key_jump2 && grounded)
-	{
-		instance_create(x, y, obj_highjumpcloud2);
-		jumpstop = false;
-		vsp = -11;
-	}
-
-	if (sprite_index != spr_player_mortattack && sprite_index != spr_player_mortdash)
-	{
-		if (!grounded)
-		{
-			sprite_index = spr_player_mortjump;
-		}
-		else if (sprite_index == spr_player_mortjump)
-		{
-			sprite_index = spr_player_mortidle;
-		}
-	}
-
-	if (move != 0 && sprite_index == spr_player_mortidle)
-	{
-		sprite_index = spr_player_mortwalk;
-	}
-	else if (move == 0 && sprite_index == spr_player_mortwalk)
-	{
-		sprite_index = spr_player_mortidle;
-	}
-
-	if (sprite_index != spr_player_mortattack)
+	if (!landAnim)
 	{
 		if (move != 0)
-		{
-			if (xscale != move)
-			{
-				movespeed = 0;
-				xscale = move;
-			}
-
-			if (movespeed < 10)
-			{
-				movespeed += 0.2;
-			}
-			else if (floor(movespeed) == 10)
-			{
-				movespeed = 10;
-			}
-		}
+			sprite_index = spr_player_mortwalk
 		else
 		{
-			movespeed = 0;
-		}
-
-		if (movespeed > 10)
-		{
-			movespeed -= 0.2;
+			sprite_index = spr_player_mortidle
+			image_speed = 0.35
 		}
 	}
-
-	if (sprite_index == spr_player_mortwalk)
+	else if (floor(image_index) == (image_number - 1))
 	{
-		if (movespeed >= 9)
-		{
-			image_speed = 0.7;
-		}
-		else if (movespeed >= 6)
-		{
-			image_speed = 0.5;
-		}
-		else if (movespeed >= 3)
-		{
-			image_speed = 0.3;
-		}
+		landAnim = 0
+		if (move != 0)
+			sprite_index = spr_player_mortwalk
+		else
+			sprite_index = spr_player_mortidle
 	}
-	else if (key_jump2 && sprite_index == spr_player_mortjump)
+	if (!grounded)
 	{
-		image_speed = 0.5;
+		state = states.mortjump
+		sprite_index = spr_player_mortjump
 	}
-	else
+	else if (input_buffer_jump < 8)
 	{
-		image_speed = 0.35;
+		input_buffer_jump = 0
+		state = states.mortjump
+		doublejump = 0
+		vsp = -11
+		sprite_index = spr_player_mortjumpstart
+		image_index = 0
+		scr_soundeffect(sfx_jump)
+		create_particle(x, y, particle.jumpdust, 0)
 	}
-
-	if (!instance_exists(obj_dashcloud) && grounded && hsp != 0)
-	{
-		with (instance_create(x, y, obj_dashcloud))
-		{
-			image_xscale = other.xscale;
-		}
-	}
+	mort_attack()
+	exit;
 }
+
+function mort_attack()
+{
+	if key_slap2
+	{
+		state = states.mortattack
+		sprite_index = spr_player_mortattackfront
+		image_index = 0
+		if (move != 0)
+			xscale = move
+		var _angle = 0
+		if key_up
+		{
+			_angle = 90
+			sprite_index = spr_player_mortattackup
+		}
+		else if (key_down && (!grounded))
+		{
+			if (!grounded)
+				vsp = 3
+			_angle = 270
+			sprite_index = spr_player_mortattackdown
+		}
+		else
+			movespeed = (xscale * 12)
+		with (instance_create(x, y, obj_morthitbox))
+		{
+			playerid = other.id
+			if (_angle == 0)
+				image_xscale = other.xscale
+			image_angle = _angle
+			alarm[0] = 15
+		}
+	}
+	if (sprite_index == spr_player_mortattackdown or sprite_index == spr_player_mortattackup or sprite_index == spr_player_mortattack)
+	{
+
+		{
+
+		}
+	}
+	exit;
+}
+
+function Mort_DownMovement()
+{
+	if (image_angle == 270)
+	{
+		with (playerid)
+		{
+			doublejump = 0
+			vsp = -14
+		}
+	}
+	exit;
+}
+

@@ -9,7 +9,7 @@ if (sprite_index != spr_mortspawn && sprite_index != spr_mortfall)
 
 		mort = true;
 		instance_create_unique(x, y, 12);
-		global.mort = true;
+         state = states.mort
 		tv_push_prompt_once(tv_create_prompt("This is the mort powerup text", tvprompt.transfo, spr_tv_mort, 3), "mort");
 	}
 

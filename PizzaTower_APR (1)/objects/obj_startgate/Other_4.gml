@@ -9,7 +9,7 @@ switch (targetRoom)
 
 	case floor1_room1:
 	case graveyard_1:
-	case farm_1:
+	case farm_2:
 	case ufo_1:
 		world = 2;
 		break;

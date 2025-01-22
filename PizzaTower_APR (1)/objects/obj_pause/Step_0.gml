@@ -92,7 +92,7 @@ if (pause && (!instance_exists(obj_option)))
                             break
                         case "farm":
                         case "farmsecret":
-                            rm = farm_1
+                            rm = farm_2
                             break
                         case "ufo":
                         case "ufosecret":

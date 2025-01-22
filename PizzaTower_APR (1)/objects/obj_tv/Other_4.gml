@@ -64,7 +64,7 @@ if (room == desert_1)
     global.brank = global.srank - global.srank / 4 * 2
     global.crank = global.srank - global.srank / 4 * 3
 }
-if (room == farm_1)
+if (room == farm_2)
 {
     global.srank = 10300
     global.arank = global.srank - global.srank / 4

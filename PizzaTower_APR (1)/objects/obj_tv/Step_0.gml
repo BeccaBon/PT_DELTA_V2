@@ -152,6 +152,12 @@ switch (state)
 
 				break;
 
+		case states.mort:
+		case states.mortattack:
+		case states.morthook:
+		case states.mortjump:
+			idlespr = spr_tv_mort;
+			break;
 			case states.pistol:
 				if (global.mort)
 				{
