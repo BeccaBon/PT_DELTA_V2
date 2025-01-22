@@ -1,38 +1,54 @@
-function scr_player_mort()
+function scr_player_mort() //scr_player_mort
 {
-	move = (key_right + key_left)
-	hsp = movespeed
-	mort = 0
-	doublejump = 0
-	jumpstop = 0
-	if key_jump
-		input_buffer_jump = 0
-	if (move != 0)
-	{
-		if (move == xscale)
-			movespeed = Approach(movespeed, (xscale * 8), 0.8)
-		else
-			movespeed = Approach(movespeed, 0, 0.8)
-		if (movespeed <= 0)
-			xscale = move
-	}
-	else
-		movespeed = Approach(movespeed, 0, 0.8)
-	if (movespeed < 3 && move != 0)
-		image_speed = 0.35
-	else if (movespeed > 3 && movespeed < 6)
-		image_speed = 0.45
-	else
-		image_speed = 0.6
-	if (place_meeting((x + sign(hsp)), y, obj_solid) && (!(place_meeting((x + sign(hsp)), y, obj_slope))))
-	{
-		movespeed = 0
-		if (sprite_index == spr_player_barrelmove)
-			sprite_index = spr_player_barrelidle
-	}
-	if (!landAnim)
-	{
-		if (move != 0)
+    move = (key_right + key_left)
+    hsp = (move * movespeed)
+    mort = 0
+    doublejump = 0
+    jumpstop = 0
+    if key_attack
+    {
+        image_speed = 0.45
+        movespeed = 12
+        hsp = (xscale * movespeed)
+    }
+    if key_jump
+        input_buffer_jump = 0
+    if (dir != xscale)
+    {
+        dir = xscale
+        movespeed = 2
+    }
+    if (move != 0)
+    {
+        xscale = move
+        if (movespeed < 8)
+            movespeed += 0.5
+        else if (floor(movespeed) == 8)
+            movespeed = 6
+    }
+    else
+        movespeed = 0
+    if (!key_attack)
+    {
+        if (movespeed < 3 && move != 0)
+            image_speed = 0.35
+        else if (movespeed > 3 && movespeed < 6)
+            image_speed = 0.45
+        else
+            image_speed = 0.6
+    }
+    if (movespeed > 8)
+        movespeed -= 0.1
+    if (!landAnim)
+    {
+        if key_attack
+        {
+            if (sprite_index != spr_player_mortrun)
+                image_index = 0
+            sprite_index = spr_player_mortrun
+			movespeed = 8
+        }
+		else if (move != 0)
 			sprite_index = spr_player_mortwalk
 		else
 		{

@@ -1,2 +1,2 @@
-ID = 298;
-depth = 10;
+ID = obj_null
+depth = 10
