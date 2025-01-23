@@ -22,6 +22,10 @@ if (room == Realtitlescreen)
         ds_map_destroy(special_prompts)
     special_prompts = -4
 }
+if !obj_player1.ispeppino
+tv_bg_index = 2
+else
+tv_bg_index = 1
 if (room == entrance_1)
 {
     global.srank = 11500

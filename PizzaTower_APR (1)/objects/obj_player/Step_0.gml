@@ -358,6 +358,8 @@ switch state
 		scr_player_trickjump()
 		break
 }
+if (state != states.mach3)
+	mach4mode = 0
 if (!scr_slope())
     angle = 0
 else if (!(place_meeting(x, (y + 1), obj_solid)))

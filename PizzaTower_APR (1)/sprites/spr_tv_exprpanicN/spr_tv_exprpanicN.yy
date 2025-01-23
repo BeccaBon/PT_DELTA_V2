@@ -100,7 +100,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Peppino",
-    "path": "folders/Sprites/HUD/TV/Peppino.yy",
+    "name": "Noise",
+    "path": "folders/Sprites/HUD/TV/Noise.yy",
   },
 }

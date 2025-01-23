@@ -63,7 +63,7 @@ function state_player_normal()
 			{
 				sprite_index = spr_player_mortwalk;
 			}
-			else if (global.minutes == 0 && global.seconds == 0)
+			else if (global.fill == 0)
 			{
 				sprite_index = spr_hurtwalk;
 			}
@@ -170,7 +170,7 @@ function state_player_normal()
 					{
 						sprite_index = spr_player_mortidle;
 					}
-					else if (global.minutes == 0 && global.seconds == 0)
+					else if (global.fill == 0)
 					{
 						sprite_index = spr_hurtidle;
 					}

@@ -118,6 +118,7 @@ function scr_player_mach3()
 				if (movespeed > 20 && sprite_index != spr_crazyrun)
 				{
 					flash = true;
+					mach4mode = 1
 					sprite_index = spr_crazyrun;
 				}
 				else if (movespeed <= 20 && sprite_index == spr_crazyrun)

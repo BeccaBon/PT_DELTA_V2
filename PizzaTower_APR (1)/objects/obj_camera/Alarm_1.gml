@@ -1,10 +1,13 @@
-if (global.panic == true || global.snickchallenge == true)
+if (global.panic == true)
 {
 	global.seconds -= 1;
-
-	if (global.collect >= 5)
+	if (global.collect >= 5 )
 	{
 		global.collect -= 5;
+		{
+			with (instance_create(121, 60, obj_negativenumber))
+				number = "-5";
+		}
 	}
 
 	if (instance_exists(obj_player2))

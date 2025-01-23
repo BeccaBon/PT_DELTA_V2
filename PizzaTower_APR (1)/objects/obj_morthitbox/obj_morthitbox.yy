@@ -38,7 +38,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PizzaTower_APR",
-    "path": "PizzaTower_APR.yyp",
+    "name": "Hitbox",
+    "path": "folders/Objects/Enemies/Hitbox.yy",
   },
 }

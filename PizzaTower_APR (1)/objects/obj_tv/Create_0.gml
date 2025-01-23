@@ -1,6 +1,14 @@
+enum tvprompt
+{
+	normal,
+	trigger,
+	transfo
+}
+tv_bg_index = 0;
 image_speed = 0.1;
 chose = 0;
 message = "";
+targetgolf = -4;
 showtext = 0;
 tvprompts_list = ds_list_create();
 state = states.normal;
@@ -54,3 +62,9 @@ state = states.normal;
 expressionsprite = -4;
 expressionbuffer = 0;
 display_set_gui_size(960, 540);
+noisemax = 6
+noisebuffer = noisemax;
+expressionsprite = -4;
+spr_palette = obj_player1.spr_palette;
+paletteselect = 1;
+tv_trans = 0;
