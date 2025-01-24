@@ -205,6 +205,7 @@ superchargedeffectid = obj_null;
 pizzashield = false;
 pizzashieldid = obj_null;
 pizzapepper = false;
+noisepizzapepper = 0;
 transformation[0] = states.bombpep;
 transformation[1] = states.knightpep;
 transformation[2] = states.knightpepslopes;
@@ -246,6 +247,8 @@ freefallvsp = 15;
 
 if (!variable_global_exists("saveroom"))
 {
+	global.swapmode = false;
+	global.noisejetpack = 0;
 	global.hidetiles = false;
 	global.saveroom = ds_list_create();
 	global.playerhealth = 100;

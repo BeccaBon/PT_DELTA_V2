@@ -11,16 +11,16 @@ layer_depth("Tiles_Foreground3", -32)
 layer_depth("Assets_BG", 201)
 if global.hidetiles
 {
-    layer_set_visible("Tiles_BG", false)
-    layer_set_visible("Tiles_BG2", false)
-    layer_set_visible("Tiles_BG3", false)
-    layer_set_visible("Tiles_1", false)
-    layer_set_visible("Tiles_2", false)
-    layer_set_visible("Tiles_3", false)
-    layer_set_visible("Tiles_4", false)
-    layer_set_visible("Tiles_Foreground1", false)
-    layer_set_visible("Tiles_Foreground2", false)
-    layer_set_visible("Tiles_Foreground3", false)
+	layer_set_visible("Tiles_BG", 0)
+	layer_set_visible("Tiles_BG2", 0)
+	layer_set_visible("Tiles_BG3", 0)
+	layer_set_visible("Tiles_1", 0)
+	layer_set_visible("Tiles_2", 0)
+	layer_set_visible("Tiles_3", 0)
+	layer_set_visible("Tiles_4", 0)
+	layer_set_visible("Tiles_Foreground1", 0)
+	layer_set_visible("Tiles_Foreground2", 0)
+	layer_set_visible("Tiles_Foreground3", 0)
 }
 bg_scrollx = 0
 bg_scrolly = 0
@@ -44,4 +44,3 @@ bg_2xoffset = layer_get_x("Backgrounds_2")
 bg_2yoffset = layer_get_y("Backgrounds_2")
 layer_depth("Foreground_Ground1", -300)
 layer_depth("Backgrounds_Ground1", 250)
-

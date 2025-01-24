@@ -77,6 +77,7 @@ function scr_hurtplayer(argument0)
 			alarm[8] = 60;
 			alarm[7] = 120;
 			hurted = true;
+			tv_do_expression(spr_tv_exprhurt);
 			scr_soundeffect(sfx_pephurt);
 		}
 	        else if ((state == states.knightpep || state == states.knightpepattack || state == states.knightpepslopes || state == states.knightpepbump) && cutscene == 0)

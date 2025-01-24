@@ -29,5 +29,6 @@ if (other.state != states.gotoplayer)
 	with (instance_create(x + 16, y, obj_smallnumber))
 	{
 		number = string(100);
+	tv_do_expression(spr_tv_exprcollect);
 	}
 }

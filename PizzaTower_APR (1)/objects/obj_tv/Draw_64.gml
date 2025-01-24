@@ -30,28 +30,33 @@ var collect_y = irandom_range(-collect_shake, collect_shake);
 
 if (room != strongcold_endscreen)
 {
+	draw_sprite_ext(spr_tv_bg, tv_bg_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
 	pal_swap_set(spr_palette, paletteselect, false);
 	draw_sprite_ext(sprite_index, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
 	
-	var _red = obj_player1.pizzapepper && (obj_player1.ispeppino);
+	var _red = global.noisejetpack && (obj_player1.ispeppino || obj_player1.noisepizzapepper);
+	if (_red)
+	{
+		pal_swap_set(spr_palette, 2, false);
+		draw_sprite_ext(sprite_index, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
+	}
 	
-	if (!obj_player1.ispeppino)
+	if (!obj_player1.ispeppino || global.swapmode)
 	{
 		pal_swap_set(spr_tv_palette, 1, false);
 		var spr = spr_tv_empty;
 		if (sprite_index == spr_tv_open)
 			spr = sprite_index;
-		draw_sprite_ext(spr_tv_bg, tv_bg_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
-		draw_sprite_ext(sprite_index, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
+		draw_sprite_ext(spr, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
 	}
 	
 	if (state == states.tv_whitenoise)
 	{
-		if (!obj_player1.ispeppino)
+		if (!obj_player1.ispeppino || global.swapmode)
 			pal_swap_set(spr_tv_palette, 1, false);
 		draw_sprite(spr_tv_whitenoise, tv_trans, tv_x + collect_x, tv_y + collect_y + hud_posY);
 	}
-	
+
 	if (sprite_index == spr_tv_exprheatN)
 	{
 		pal_swap_set(spr_palette, paletteselect, false);
@@ -63,7 +68,6 @@ if (room != strongcold_endscreen)
 		}
 	}
 	
-
 }
 shader_reset();
 
@@ -88,7 +92,8 @@ if (bubblespr == spr_tv_bubble)
 }
 draw_set_halign(fa_left);
 surface_reset_target();
-if (global.combo != 0 && sprite_index != spr_tv_open && sprite_index != spr_tv_off)
+
+	if (global.combo != 0 && sprite_index != spr_tv_open && sprite_index != spr_tv_off)
 {
 			pal_swap_set(spr_tv_palette, 1, false);
 			draw_sprite_ext(spr_tv_combo, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 0, c_white, alpha);
@@ -101,7 +106,7 @@ if (global.combo != 0 && sprite_index != spr_tv_open && sprite_index != spr_tv_o
 
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
-	draw_set_font(global.combofont);
+	draw_set_font(global.combofont)
 	var num = string_length(str);
 	var w = string_width(str) / num;
 	var xx = 0;
@@ -177,3 +182,8 @@ var sw = sprite_get_width(spr_barpop);
 var sh = sprite_get_height(spr_barpop);
 var b = global.combotime / 55;
 draw_sprite_part(spr_barpop, 1, 0, 0, sw * b, sh, 832 + barxx, 200 + baryy);
+
+if obj_player1.ispeppino == false
+tv_bg_index = 1
+else
+tv_bg_index = 2
