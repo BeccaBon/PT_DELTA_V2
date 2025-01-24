@@ -168,7 +168,7 @@ if (pause && (!instance_exists(obj_option)))
                     obj_player1.targetDoor = "A"
                     if instance_exists(obj_player2)
                         obj_player2.targetDoor = "A"
-                    global.cowboyhat = 0
+                    global.cowboyhat = false
                     global.coop = 0
                 }
                 else

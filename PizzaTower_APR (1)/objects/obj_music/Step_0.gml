@@ -80,20 +80,7 @@ if (
 )
 {
 	audio_stop_all();
-    if (global.gerome == true)
-    {
-		if (obj_player1.character == "N" || obj_player1.ispeppino == 0)
-		{
-			scr_sound(mu_noisechase)
-			pausedmusic = mu_noisechase
-		}
-		else
-		{
-			scr_sound(mu_chase)
-			pausedmusic = mu_chase
-		}
-    }
-	else if (string_letters(room_get_name(room)) == "exit")
+	if (string_letters(room_get_name(room)) == "exit")
     {
 		if (obj_player1.character == "N" || obj_player1.ispeppino == 0)
 		{
@@ -135,7 +122,21 @@ if (global.miniboss == false && arena == 0 && audio_is_playing(mu_miniboss))
 {
 	audio_stop_sound(mu_miniboss);
 }
-
+if (!audio_is_playing(mu_noisechase) && !audio_is_playing(mu_chase) && global.gerome == true)
+{
+	if (obj_player1.character == "N" || obj_player1.ispeppino == 0)
+	{
+		audio_stop_all();
+		scr_sound(mu_noisechase)
+		pausedmusic = mu_noisechase
+	}
+	else
+	{
+		audio_stop_all();
+		scr_sound(mu_chase)
+		pausedmusic = mu_chase
+	}
+}
 if (!audio_is_playing(mu_snickchallenge) && global.snickchallenge == true && obj_pause.pause == 0 && global.minutes >= 2 && obj_camera.ded == 0)
 {
 	audio_stop_all();

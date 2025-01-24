@@ -23,7 +23,7 @@ function scr_player_morthook()
 		else if (floor(image_index) == (image_number - 1))
 		{
 			state = states.mortjump
-			sprite_index = spr_mortdoublejumpstart
+			sprite_index = spr_player_mortdoublejump
 			image_index = 0
 			vsp = -14
 			movespeed = (xscale * 12)

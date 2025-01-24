@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Unused",
-    "path": "folders/Sprites/Unused.yy",
+    "name": "PizzaTower_APR",
+    "path": "PizzaTower_APR.yyp",
   },
 }

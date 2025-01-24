@@ -6,7 +6,7 @@ if (obj_player.state == states.knightpepslopes || obj_player.state == states.kni
 {
 	visible = false;
 }
-else if (global.cowboyhat == 1)
+else if (global.cowboyhat == true)
 {
 	visible = true;
 }

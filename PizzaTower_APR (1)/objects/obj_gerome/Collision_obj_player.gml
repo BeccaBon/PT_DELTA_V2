@@ -4,5 +4,6 @@ if (global.panic == true)
 	global.gerome = true;
 	global.stylelock = true;
 	instance_create(x, y, obj_geromefollow);
+	instance_create(x, y, obj_lap2visual);
 	instance_destroy();
 }

@@ -1,2 +1,2 @@
-global.cowboyhat = 1;
+global.cowboyhat = true;
 instance_destroy();

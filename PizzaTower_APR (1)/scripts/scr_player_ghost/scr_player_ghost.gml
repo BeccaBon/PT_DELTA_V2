@@ -81,6 +81,22 @@ function scr_player_ghost()
 			other.y = y;
 		}
 	}
+	if (place_meeting(x, y, obj_tombstonehazard) && sprite_index != spr_ghostend)
+	{
+		vsp = 10;
+		image_alpha = 1;
+		hsp = 0;
+		image_index = 0;
+		grav = 0.5;
+		movespeed = 0;
+		sprite_index = spr_ghostend;
+
+		with (instance_place(x, y, obj_tombstonehazard))
+		{
+			other.x = x;
+			other.y = y;
+		}
+	}
 
 	if (sprite_index == spr_ghostend && floor(image_index) == (image_number - 1))
 	{
