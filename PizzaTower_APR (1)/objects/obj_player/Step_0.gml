@@ -357,6 +357,9 @@ switch state
 	case states.trickjump:
 		scr_player_trickjump()
 		break
+    case states.ridecow:
+        scr_player_ridecow()
+        break
 }
 if (state != states.mach3)
 	mach4mode = 0
@@ -414,7 +417,10 @@ if (invhurt_buffer > 0)
 {
 	invhurt_buffer--;
 }
-
+if (cow_buffer > 0)
+{
+    cow_buffer--
+	}
 if (state == states.hurt)
 {
 	if (hurt_buffer > 0)

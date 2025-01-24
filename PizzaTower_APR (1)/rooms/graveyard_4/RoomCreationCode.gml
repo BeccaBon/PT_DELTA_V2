@@ -1,2 +1,2 @@
-pal_swap_init_system(shd_pal_swapper);
-global.roommessage = "CHEF NEVER DIES";
+pal_swap_init_system(1)
+global.roommessage = "CHEF NEVER DIES"

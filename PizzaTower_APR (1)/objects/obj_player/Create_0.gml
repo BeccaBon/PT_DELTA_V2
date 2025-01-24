@@ -167,6 +167,7 @@ stickpressed = false;
 spotlight = true;
 macheffect = false;
 chargeeffectid = obj_null;
+cow_buffer = 0;
 motochargeeffectid = obj_null;
 dashcloudid = obj_null;
 crazyruneffectid = obj_null;
