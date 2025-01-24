@@ -9,7 +9,6 @@ if (other.object_index == obj_player1)
 		global.gotshotgun = 1;
 		scr_soundeffect(sfx_shotgungot);
 		instance_destroy();
-		tv_push_prompt_once(tv_create_prompt("This is the shotgun powerup text", tvprompt.transfo, spr_tv_shotgun, 3), "shotgun");
 		global.heattime = 60;
 	}
 }
