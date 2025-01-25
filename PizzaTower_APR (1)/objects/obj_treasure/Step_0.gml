@@ -53,6 +53,7 @@ if (player == obj_hardmode && place_meeting(x, y, obj_player))
 					other.x = x;
 					other.y = y - 35;
 					obj_tv.showtext = 1;
+					audio_stop_all();
 					obj_tv.message = "YOU GOT A TOWER SECRET TREASURE!!!";
 					obj_tv.alarm[0] = 200;
 					other.player = (object_index == obj_player1) ? obj_grindrailslope : obj_banditochicken_dynamite;
