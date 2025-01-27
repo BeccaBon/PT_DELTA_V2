@@ -185,7 +185,7 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "PizzaTower_APR",
-    "path": "PizzaTower_APR.yyp",
+    "name": "Wasteyard",
+    "path": "folders/Rooms/Levels/Wasteyard.yy",
   },
 }
