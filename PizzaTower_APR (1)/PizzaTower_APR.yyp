@@ -1021,6 +1021,7 @@
     {"id":{"name":"farm_4b","path":"rooms/farm_4b/farm_4b.yy",},"order":11,},
     {"id":{"name":"farm_5","path":"rooms/farm_5/farm_5.yy",},"order":12,},
     {"id":{"name":"farm_secret2","path":"rooms/farm_secret2/farm_secret2.yy",},"order":1,},
+    {"id":{"name":"boss_pizzaface","path":"rooms/boss_pizzaface/boss_pizzaface.yy",},"order":4,},
     {"id":{"name":"farm_6","path":"rooms/farm_6/farm_6.yy",},"order":13,},
     {"id":{"name":"farm_secret3","path":"rooms/farm_secret3/farm_secret3.yy",},"order":2,},
     {"id":{"name":"farm_7","path":"rooms/farm_7/farm_7.yy",},"order":14,},
@@ -5060,6 +5061,7 @@
     {"roomId":{"name":"graveyard_5b","path":"rooms/graveyard_5b/graveyard_5b.yy",},},
     {"roomId":{"name":"graveyard_5c","path":"rooms/graveyard_5c/graveyard_5c.yy",},},
     {"roomId":{"name":"graveyard_6b","path":"rooms/graveyard_6b/graveyard_6b.yy",},},
+    {"roomId":{"name":"boss_pizzaface","path":"rooms/boss_pizzaface/boss_pizzaface.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":28,},
