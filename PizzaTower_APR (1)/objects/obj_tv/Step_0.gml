@@ -69,12 +69,12 @@ switch (state)
 		}
 		if (!_transfo)
 		{
-			with (obj_player1)
+			//with (obj_player1)
 			{
-				if (mach4mode == 1)
-					tv_do_expression(spr_tv_exprmach4);
-				else if (state == states.mach3 || sprite_index == spr_mach3boost)
-					tv_do_expression(spr_tv_exprmach3);
+				//if (mach4mode == 1)
+					//tv_do_expression(spr_tv_exprmach4);
+				//else if (state == states.mach3 || sprite_index == spr_mach3boost)
+					//tv_do_expression(spr_tv_exprmach3);
 			}
 		}
 		switch (sprite_index)
@@ -273,31 +273,31 @@ switch (state)
 				}
 				break;
 			
-			case spr_tv_exprmach3:
-			case spr_tv_exprmach3N:
-				with (obj_player1)
+			//case spr_tv_exprmach3:
+			//case spr_tv_exprmach3N:
+				//with (obj_player1)
 				{
-					if (state != states.mach3 && state != states.climbwall && (state != states.chainsaw || (tauntstoredstate != states.mach3 && tauntstoredstate != states.climbwall)) && sprite_index != spr_mach3boost && mach4mode == 0)
+					//if (state != states.mach3 && state != states.climbwall && (state != states.chainsaw || (tauntstoredstate != states.mach3 && tauntstoredstate != states.climbwall)) && sprite_index != spr_mach3boost && mach4mode == 0)
 					{
-						other.state = states.tv_whitenoise;
-						other.expressionsprite = -4;
+						//other.state = states.tv_whitenoise;
+						//other.expressionsprite = -4;
 					}
-					if (mach4mode)
-						tv_do_expression(spr_tv_exprmach4);
+					//if (mach4mode)
+						//tv_do_expression(spr_tv_exprmach4);
 				}
-				break;
+				//break;
 			
-			case spr_tv_exprmach4:
-			case spr_tv_exprmach4N:
-				with (obj_player1)
+			//case spr_tv_exprmach4:
+			//case spr_tv_exprmach4N:
+				//with (obj_player1)
 				{
-					if (mach4mode == 0 && (state != states.chainsaw || (tauntstoredstate != states.mach3 && tauntstoredstate != states.climbwall)))
+					//if (mach4mode == 0 && (state != states.chainsaw || (tauntstoredstate != states.mach3 && tauntstoredstate != states.climbwall)))
 					{
-						other.state = states.tv_whitenoise;
-						other.expressionsprite = -4;
+						//other.state = states.tv_whitenoise;
+						//other.expressionsprite = -4;
 					}
 				}
-				break;
+				///break;
 			
 			case spr_tv_exprheat:
 			case spr_tv_exprheatN:
@@ -309,8 +309,8 @@ switch (state)
 				}
 				if (global.stylethreshold < 3 || _transfo || obj_player1.mach4mode || obj_player1.state == states.hurt || obj_player1.state == states.mach3 || obj_player1.sprite_index == obj_player1.spr_mach3boost)
 				{
-					state = states.tv_whitenoise;
-					expressionsprite = noone;
+						other.state = states.tv_whitenoise;
+						other.expressionsprite = -4;
 				}
 				break;
 			

@@ -14,7 +14,7 @@ if (state == states.handstandjump)
                 state = states.grabbed
                 playerid = other.id
             }
-tv_push_prompt_once(tv_create_prompt("This is the bomb transformation text", tvprompt.transfo, spr_tv_bombpep, 3), "bombpep");
+//tv_push_prompt_once(tv_create_prompt("This is the bomb transformation text", tvprompt.transfo, spr_tv_bombpep, 3), "bombpep");
         }
     }
 }

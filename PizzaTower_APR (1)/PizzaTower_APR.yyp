@@ -3527,6 +3527,7 @@
     {"id":{"name":"bg_ruinarchitecture1","path":"sprites/bg_ruinarchitecture1/bg_ruinarchitecture1.yy",},"order":0,},
     {"id":{"name":"bg_ruincheese1","path":"sprites/bg_ruincheese1/bg_ruincheese1.yy",},"order":0,},
     {"id":{"name":"bg_ruincheese2","path":"sprites/bg_ruincheese2/bg_ruincheese2.yy",},"order":0,},
+    {"id":{"name":"tile_hubworld","path":"tilesets/tile_hubworld/tile_hubworld.yy",},"order":18,},
     {"id":{"name":"bg_ruincheese3","path":"sprites/bg_ruincheese3/bg_ruincheese3.yy",},"order":0,},
     {"id":{"name":"bg_ruinstatue1","path":"sprites/bg_ruinstatue1/bg_ruinstatue1.yy",},"order":0,},
     {"id":{"name":"bg_ruinstatue2","path":"sprites/bg_ruinstatue2/bg_ruinstatue2.yy",},"order":0,},
