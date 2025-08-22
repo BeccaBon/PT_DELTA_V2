@@ -1406,6 +1406,7 @@
     {"id":{"name":"scr_player_mach2","path":"scripts/scr_player_mach2/scr_player_mach2.yy",},"order":0,},
     {"id":{"name":"scr_player_mach1","path":"scripts/scr_player_mach1/scr_player_mach1.yy",},"order":0,},
     {"id":{"name":"scr_player_slipnslide","path":"scripts/scr_player_slipnslide/scr_player_slipnslide.yy",},"order":0,},
+    {"id":{"name":"fg_strongcold","path":"sprites/fg_strongcold/fg_strongcold.yy",},"order":1,},
     {"id":{"name":"scr_player_crouchslide","path":"scripts/scr_player_crouchslide/scr_player_crouchslide.yy",},"order":0,},
     {"id":{"name":"scr_player_crouchjump","path":"scripts/scr_player_crouchjump/scr_player_crouchjump.yy",},"order":0,},
     {"id":{"name":"desert_9","path":"rooms/desert_9/desert_9.yy",},"order":19,},
