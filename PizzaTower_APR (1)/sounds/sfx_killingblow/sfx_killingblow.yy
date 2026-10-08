@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_killingblow",
-  "duration": 0.532,
+  "duration": 0.532336,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

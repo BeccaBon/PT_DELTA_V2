@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_secretblock",
   "spriteId": {
-    "name": "sprite1029",
-    "path": "sprites/sprite1029/sprite1029.yy",
+    "name": "spr_secretblock",
+    "path": "sprites/spr_secretblock/spr_secretblock.yy",
   },
   "solid": false,
   "visible": true,

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_destroyable3escape",
   "spriteId": {
-    "name": "sprite3871",
-    "path": "sprites/sprite3871/sprite3871.yy",
+    "name": "spr_bigdestroyableescape",
+    "path": "sprites/spr_bigdestroyableescape/spr_bigdestroyableescape.yy",
   },
   "solid": false,
   "visible": true,

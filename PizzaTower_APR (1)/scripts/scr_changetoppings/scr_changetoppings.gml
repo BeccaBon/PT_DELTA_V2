@@ -98,7 +98,7 @@ function scr_changetoppings()
 		{
 			if ((obj_player1.character == "P" && obj_player1.spotlight == true) || (obj_player2.character == "P" && obj_player1.spotlight == false))
 			{
-				sprite_index = spr_destroyable21;
+				sprite_index = spr_destroyable2escape;
 			}
 
 			if ((obj_player1.character == "N" && obj_player1.spotlight == true) || (obj_player2.character == "N" && obj_player1.spotlight == false))

@@ -21,6 +21,11 @@ if (ds_list_find_index(global.baddieroom, id) == -1 && important == false)
 	{
 		number = string(combototal);
 	}
+    var bullet = random_range(1, 100)
+    if (bullet >= 90)
+    {
+        (instance_create(x, y, obj_ammocollect))
+    }
 
 	scr_soundeffect(sfx_killenemy);
 
@@ -92,6 +97,7 @@ else if (ds_list_find_index(global.baddieroom, id) == -1 && important == true)
 		shake_mag = 3;
 		shake_mag_acc = 3 / room_speed;
 	}
+
 
 	ds_list_add(global.baddieroom, id);
 

@@ -1,4 +1,4 @@
-if (room == Realtitlescreen || room == rank_room || room == rm_levelselect || room == boss_pepperman || room == boss_vigilante || room == boss_noise || room == boss_mrstick || room == timesuproom || room == boss_room1 || room == characterselect)
+if (room == Realtitlescreen || room == rank_room || room == rm_levelselect || room == hub_room1 || room == boss_pepperman || room == boss_vigilante || room == boss_noise || room == boss_mrstick || room == timesuproom || room == boss_room1 || room == characterselect)
 {
 	visible = false;
 	sprite_index = spr_tv_off;

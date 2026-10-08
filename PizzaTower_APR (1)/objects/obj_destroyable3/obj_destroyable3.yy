@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_destroyable3",
   "spriteId": {
-    "name": "sprite387",
-    "path": "sprites/sprite387/sprite387.yy",
+    "name": "spr_bigdestroyable",
+    "path": "sprites/spr_bigdestroyable/spr_bigdestroyable.yy",
   },
   "solid": false,
   "visible": true,

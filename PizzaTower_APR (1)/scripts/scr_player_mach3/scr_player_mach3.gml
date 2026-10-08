@@ -77,6 +77,37 @@ function scr_player_mach3()
 			{
 				jumpstop = false;
 			}
+			if (key_slap2 && (character == "P" || character == "N") && !skateboarding)
+			{
+				suplexmove = true;
+				suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false);
+				sfx_gain(suplexdashsnd);
+				state = states.handstandjump;
+				if movespeed < 10
+					movespeed = 10;
+				image_index = 0;
+
+				if (!shotgunAnim)
+				{
+					sprite_index = spr_suplexdash;
+				}
+				else
+				{
+					sprite_index = spr_shotgunsuplexdash;
+				}
+					if global.attackstyle = 1
+				{
+					sprite_index = spr_player_attackdash
+				}
+				with (instance_create(x, y, obj_superdashcloud))
+				{
+					image_xscale = other.xscale;
+				}
+
+				particle_set_scale(particle.crazyrunothereffect, xscale, 1);
+				create_particle(x, y, particle.crazyrunothereffect, 0);
+				exit;
+			}
 
 			if (input_buffer_jump < 8 && sprite_index != spr_mach3jump && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1))
 			{
@@ -463,6 +494,7 @@ function scr_player_mach3()
 			{
 				jumpstop = false;
 			}
+
 
 			if (input_buffer_jump < 8 && grounded && !(move == 1 && xscale == -1) && !(move == -1 && xscale == 1))
 			{

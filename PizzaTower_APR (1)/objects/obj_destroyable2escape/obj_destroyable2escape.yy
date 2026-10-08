@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_destroyable2escape",
   "spriteId": {
-    "name": "spr_destroyable21",
-    "path": "sprites/spr_destroyable21/spr_destroyable21.yy",
+    "name": "spr_destroyable2escape",
+    "path": "sprites/spr_destroyable2escape/spr_destroyable2escape.yy",
   },
   "solid": false,
   "visible": true,

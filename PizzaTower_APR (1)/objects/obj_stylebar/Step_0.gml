@@ -1,4 +1,11 @@
 visible = obj_tv.visible;
+if global.heatmeter = 0
+{
+	exit;
+	}
+else
+
+
 var pop, idle;
 
 switch (global.stylethreshold)

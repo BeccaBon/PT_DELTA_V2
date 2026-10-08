@@ -81,7 +81,8 @@ function scr_player_Sjump()
 			xscale = move;
 		}
 
-		sprite_index = spr_mach4;
+		sprite_index = spr_dashpadmach;
+		image_index = 0;
 		state = states.mach3;
 		movespeed = 12;
 	}

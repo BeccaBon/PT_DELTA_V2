@@ -1,6 +1,6 @@
 if ((obj_player1.character == "P" && obj_player1.spotlight == true) || (obj_player2.character == "P" && obj_player1.spotlight == false))
 {
-	sprite_index = choose(spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3);
+	sprite_index = choose(spr_pizzacollect1, spr_pizzacollect2, spr_pizzacollect3, spr_pizzacollect4, spr_pizzacollect5);
 }
 
 if ((obj_player1.character == "N" && obj_player1.spotlight == true) || (obj_player2.character == "N" && obj_player1.spotlight == false))

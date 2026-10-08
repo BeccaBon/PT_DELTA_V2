@@ -34,7 +34,7 @@ function scr_player_Sjumpprep()
 
 			if (sprite_index == spr_superjumppreplight)
 			{
-				movespeed = 1;
+				movespeed = 2;
 			}
 
 			if (sprite_index != spr_superjumpprep)

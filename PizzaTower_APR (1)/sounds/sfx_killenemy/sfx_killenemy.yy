@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sfx_killenemy",
-  "duration": 1.354,
+  "duration": 1.354036,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_fightballblock",
   "spriteId": {
-    "name": "spr_secretblock",
-    "path": "sprites/spr_secretblock/spr_secretblock.yy",
+    "name": "spr_secretdestroyable",
+    "path": "sprites/spr_secretdestroyable/spr_secretdestroyable.yy",
   },
   "solid": false,
   "visible": true,

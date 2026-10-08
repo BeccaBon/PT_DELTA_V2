@@ -266,6 +266,36 @@ function scr_player_mach2()
 
 		scr_soundeffect(sfx_killingblow);
 	}
+		if (key_slap2 && (character == "P" || character == "N"))
+		{
+			suplexmove = true;
+			suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false);
+			sfx_gain(suplexdashsnd);
+			state = states.handstandjump;
+			if movespeed < 10
+			movespeed = 10;
+			image_index = 0;
+
+			if (!shotgunAnim)
+			{
+				sprite_index = spr_suplexdash;
+			}
+			else
+			{
+				sprite_index = spr_shotgunsuplexdash;
+			}
+			 if global.attackstyle = 1
+			{
+				sprite_index = spr_attackdash
+			}
+			with (instance_create(x, y, obj_superdashcloud))
+			{
+				image_xscale = other.xscale;
+			}
+
+			particle_set_scale(particle.crazyrunothereffect, xscale, 1);
+			create_particle(x, y, particle.crazyrunothereffect, 0);
+		}
 
 	if (key_shoot2 && character == "V" && !instance_exists(dynamite_inst))
 	{

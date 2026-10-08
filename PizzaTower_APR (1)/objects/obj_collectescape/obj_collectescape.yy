@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_collectescape",
   "spriteId": {
-    "name": "spr_bananacollect",
-    "path": "sprites/spr_bananacollect/spr_bananacollect.yy",
+    "name": "spr_escapecollect",
+    "path": "sprites/spr_escapecollect/spr_escapecollect.yy",
   },
   "solid": false,
   "visible": true,
@@ -14,7 +14,10 @@
     "path": "sprites/spr_sausagecollect/spr_sausagecollect.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_collect",
+    "path": "objects/obj_collect/obj_collect.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 0,
@@ -38,7 +41,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Collectibles",
+    "path": "folders/Objects/Room Structure/Collectibles.yy",
   },
 }

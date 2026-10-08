@@ -23,7 +23,7 @@ function scr_playerreset()
 			sprite = spr_mild;
 		}
 
-		global.bullet = 3;
+		global.bullet = 5;
 		global.fuel = 3;
 		global.golfhit = 0;
 		global.railspeed = global.maxrailspeed;

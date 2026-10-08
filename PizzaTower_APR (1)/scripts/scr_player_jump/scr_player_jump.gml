@@ -383,6 +383,7 @@ function state_player_jump()
 		suplexdashsnd = audio_play_sound(sfx_suplexdash, 1, false);
 		sfx_gain(suplexdashsnd);
 		state = states.handstandjump;
+		if movespeed < 10
 		movespeed = 10;
 		particle_set_scale(particle.crazyrunothereffect, xscale, 1);
 		create_particle(x, y, particle.crazyrunothereffect, 0);

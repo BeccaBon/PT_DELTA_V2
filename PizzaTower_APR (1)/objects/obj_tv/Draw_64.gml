@@ -27,10 +27,12 @@ if (obj_player1.state == states.trickjump && obj_player1.ramp)
 
 var collect_x = irandom_range(-collect_shake, collect_shake);
 var collect_y = irandom_range(-collect_shake, collect_shake);
+var tv_x = 845
+var tv_y = 80
 
 if (room != strongcold_endscreen)
 {
-	draw_sprite_ext(sprite_index, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
+	draw_sprite_ext(sprite_index, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
 }
 	if (!obj_player1.ispeppino)
 	{
@@ -38,11 +40,11 @@ if (room != strongcold_endscreen)
 		var spr = spr_tv_empty;
 		if sprite_index == spr_tv_open
 			spr = sprite_index;
-		draw_sprite_ext(sprite_index, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
+		draw_sprite_ext(sprite_index, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
 	}
 if (global.combo != 0 && sprite_index != spr_tv_open && sprite_index != spr_tv_off)
 {
-	draw_sprite_ext(spr_tv_combo, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
+	draw_sprite_ext(spr_tv_combo, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
 	var str = string(global.combo);
 
 	if (global.combo < 10)
@@ -60,7 +62,7 @@ if (global.combo != 0 && sprite_index != spr_tv_open && sprite_index != spr_tv_o
 
 if (global.miniboss && sprite_index != spr_tv_open && sprite_index != spr_tv_off)
 {
-	draw_sprite_ext(spr_tv_combo, image_index, 833 + collect_x, 107 + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
+	draw_sprite_ext(spr_tv_combo, image_index, tv_x + collect_x, tv_y + collect_y + hud_posY, 1, 1, 1, c_white, alpha);
 	var str = string(global.boxhp);
 
 	if (global.boxhp < 10)
@@ -77,7 +79,7 @@ if (global.miniboss && sprite_index != spr_tv_open && sprite_index != spr_tv_off
 		var char = string_char_at(str, i + 1);
 		xx = i * w;
 		yy = i * 5;
-		draw_text(789 + xx, (91 - yy) + hud_posY, char);
+		draw_text((tv_x - 44 + xx), (tv_y - 16 - yy + hud_posY), char)
 	}
 }
 

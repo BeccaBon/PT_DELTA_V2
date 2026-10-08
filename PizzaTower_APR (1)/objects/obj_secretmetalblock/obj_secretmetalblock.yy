@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_secretmetalblock",
   "spriteId": {
-    "name": "spr_metalb",
-    "path": "sprites/spr_metalb/spr_metalb.yy",
+    "name": "spr_secretmetalb",
+    "path": "sprites/spr_secretmetalb/spr_secretmetalb.yy",
   },
   "solid": false,
   "visible": true,

@@ -442,6 +442,12 @@ function scr_enemy_grabbed()
 				shake_mag = 3;
 				shake_mag_acc = 3 / room_speed;
 			}
+				if (!important)
+				{
+					global.combo += 1;
+					global.combotime = 60;
+					global.heattime = 60;
+				}
 
 			with (_obj_player)
 			{

@@ -1,4 +1,4 @@
-if (sprite_index == spr_bulletHUD && global.bullet < 3)
+if (sprite_index == spr_bulletHUD && global.bullet < 5)
 {
 	global.bullet += 1;
 
@@ -17,7 +17,7 @@ if (sprite_index == spr_bulletHUD && global.bullet < 3)
 	instance_destroy();
 }
 
-if (sprite_index == spr_fuelHUD && global.fuel < 3)
+if (sprite_index == spr_fuelHUD && global.fuel < 5)
 {
 	global.fuel += 1;
 

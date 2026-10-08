@@ -20,7 +20,7 @@ if (ds_list_find_index(global.saveroom, id) == -1 && global.snickchallenge == fa
 
 	with (obj_collectescape)
 	{
-		visible = true;
+		image_alpha = 1;
 		instance_create(x, y, obj_genericpoofeffect);
 	}
 

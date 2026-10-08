@@ -52,7 +52,7 @@ if (floor(image_index) == 10)
 	shoving = 0;
 }
 
-if (room == strongcold_endscreen || room == boss_pepperman || room == boss_vigilante || room == boss_noise || room == boss_mrstick || room == rm_levelselect || room == rank_room || room == timesuproom || room == Realtitlescreen || room == characterselect)
+if (room == strongcold_endscreen || room == boss_pepperman || room == hub_room1 || room == boss_vigilante || room == boss_noise || room == boss_mrstick || room == rm_levelselect || room == rank_room || room == timesuproom || room == Realtitlescreen || room == characterselect)
 {
 	visible = false;
 }

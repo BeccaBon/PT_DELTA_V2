@@ -170,14 +170,22 @@ for (var i = 0; i < 2; i++)
 
 					if (!grounded && state != states.freefall && (key_jump2 || input_buffer_jump == 0))
 					{
-						if (state == states.mach2 || (state == states.mach3 && fightball == false))
+						if ((state == states.mach3 && fightball == false))
 						{
 							sprite_index = spr_mach2jump;
 						}
-
 						suplexmove = false;
 						vsp = -11;
 					}
+					if (state == states.mach2)
+					{
+						sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch);
+						image_index = 0;
+						state = states.tackle;
+						movespeed = 4;
+						vsp = -3;
+						other.baddieID.hp -= 99
+						}
 
 					if (character == "M" && state == states.freefall)
 					{

@@ -303,7 +303,7 @@ if (!variable_global_exists("saveroom"))
 	global.pizzasdelivered = 0;
 	global.spaceblockswitch = 1;
 	global.gerome = false;
-	global.bullet = 3;
+	global.bullet = 5;
 	global.fuel = 3;
 	global.bigfont = font_add_sprite_ext(spr_font, "ABCDEFGHIJKLMNOPQRSTUVWXYZ!.1234567890:", 1, 0);
 	global.collectfont = font_add_sprite_ext(spr_font_collect, "0123456789", 1, 0);
@@ -314,4 +314,5 @@ if (!variable_global_exists("saveroom"))
 	global.mort = false;
 	global.stylelock = false;
 	global.attackstyle = 0;
+	global.heatmeter = 0;
 }

@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_ammocollect",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bulletHUD",
+    "path": "sprites/spr_bulletHUD/spr_bulletHUD.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

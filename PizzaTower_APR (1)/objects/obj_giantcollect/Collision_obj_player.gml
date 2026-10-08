@@ -23,7 +23,7 @@ if (other.state != states.gotoplayer)
 		global.collectN += 1000;
 	}
 
-	if (global.bullet < 3)
+	if (global.bullet < 5)
 	{
 		global.bullet += 1;
 	}

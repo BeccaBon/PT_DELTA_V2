@@ -1,10 +1,9 @@
 if (room == rm_editor)
+    return;
+if (image_alpha == 1)
 {
-	exit;
-}
-
-if (other.state != states.gotoplayer)
-{
+    if (other.state != states.gotoplayer)
+    {
 	if (audio_is_playing(sfx_collecttopping))
 	{
 		audio_stop_sound(sfx_collecttopping);
@@ -42,4 +41,5 @@ if (other.state != states.gotoplayer)
 	}
 
 	instance_destroy();
+	}
 }

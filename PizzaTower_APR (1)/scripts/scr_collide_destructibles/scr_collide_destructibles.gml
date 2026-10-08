@@ -70,7 +70,6 @@ function scr_collide_destructibles()
 				|| state == states.tacklecharge
 				|| sprite_index == spr_barrelroll
 				|| state == states.crouchslide
-				|| state == states.mach2
 				|| state == states.chainsawbump
 				|| state == states.mach3
 				|| state == states.knightpep
@@ -243,7 +242,7 @@ function scr_collide_destructibles()
 				}
 			}
 
-			if (state == states.handstandjump || state == states.punch)
+			if (state == states.handstandjump || state == states.punch || states.mach2)
 			{
 				with (obj_destructibles)
 				{
@@ -256,7 +255,7 @@ function scr_collide_destructibles()
 								sprite_index = choose(spr_suplexmash1, spr_suplexmash2, spr_suplexmash3, spr_suplexmash4, spr_punch);
 								image_index = 0;
 								state = states.tackle;
-								movespeed = 3;
+								movespeed = 4;
 								vsp = -3;
 								instance_destroy(other);
 							}

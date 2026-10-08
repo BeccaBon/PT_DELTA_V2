@@ -1,6 +1,6 @@
 if (other.state == states.handstandjump)
 {
-	global.attackstyle = !global.attackstyle;
+	global.heatmeter = !global.heatmeter;
 
 	if (sprite_index == spr_switchblock_happy || (sprite_index == spr_switchblock_gohappy && image_index > 0))
 	{
